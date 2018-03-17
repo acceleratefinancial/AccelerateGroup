@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
   <!-- This is the head of your html, add content here just like you would normally add it to the head. -->
+  
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <!-- Meta Data -->
 <meta charset="utf-8">
@@ -204,9 +206,11 @@
         </div>
         <p><textarea placeholder="your message" name="comments" id="comments" rows="12" cols="5"></textarea>
         </p>
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
         <div class="buttoncontact">
           <p>
           <input type="hidden" name="_to" value="loans@acceleratefinancial.com.au">
+          
           <input type="submit" value="Send Message">
           </p>
       </div>
