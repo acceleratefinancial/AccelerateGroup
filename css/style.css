@@ -1834,6 +1834,10 @@ i.teamicon:hover {
   #main input[type="text"] {
     max-width: 100%;
   }
+  
+   #main input[type="radio"] {
+    max-width: 100%;
+  }
   #main textarea {
     max-width: 100%;
   }
