@@ -1777,6 +1777,37 @@ i.teamicon:hover {
 #main input[type="text"]:focus {
   background: #81858b;
 }
+
+#main input[type="radio"] {
+  width: 100%;
+  max-width: 500px;
+  color: #fff!important;
+  margin-top: 0;
+  height: 50px;
+  padding: 0 27px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+  margin-bottom: 14px;
+  float: left;
+  font-size: 14px;
+  font-family: "lato";
+  font-weight: 400;
+  box-shadow: none;
+  border: none;
+  text-transform: none;
+  outline: none;
+  background: #909090;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+#main input[type="radio"]:focus {
+  background: #81858b;
+}
+
+
 #main textarea {
   width: 100%;
   max-width: 500px;
