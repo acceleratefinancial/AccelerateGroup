@@ -1778,7 +1778,7 @@ i.teamicon:hover {
   background: #81858b;
 }
 
-#main input[type="select"] {
+#main input[type="option"] {
   width: 100%;
   max-width: 500px;
   color: #fff!important;
@@ -1803,7 +1803,7 @@ i.teamicon:hover {
   -o-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
-#main input[type="select"]:focus {
+#main input[type="option"]:focus {
   background: #81858b;
 }
 
@@ -1835,7 +1835,7 @@ i.teamicon:hover {
     max-width: 100%;
   }
   
-   #main input[type="select"] {
+   #main input[type="option"] {
     max-width: 100%;
   }
   #main textarea {
