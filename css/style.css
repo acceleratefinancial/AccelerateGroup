@@ -1778,7 +1778,7 @@ i.teamicon:hover {
   background: #81858b;
 }
 
-#main input[type="number"] {
+#main input[type="tel"] {
   width: 100%;
   max-width: 500px;
   color: #fff!important;
@@ -1803,7 +1803,7 @@ i.teamicon:hover {
   -o-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
-#main input[type="number"]:focus {
+#main input[type="tel"]:focus {
   background: #81858b;
 }
 
