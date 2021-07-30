@@ -14,10 +14,7 @@
           <p> <input type="email" placeholder="your e-mail address" name="email" id="email" required/>
           </p>
         </div>
-        <div>
-          <p> <input type="text" placeholder="subject" name="_subject" id="subject" />
-          </p>
-        </div>
+
         <!---<div>
           <p> <input type="text" placeholder="Are you interested in a home, business or car loan?" name="loan-type" id="loan-type" />
           </p>
@@ -26,30 +23,51 @@
         
         
          <div>
-          <p> <input type="select" placeholder="Are you interested in a ..." name="loan-type" id="loan-type" />
-          <select name="loan-type"> 
-          <option value="Car-Loan">Car Loan</option>
-          <option value="Home-Loan">Home Loan</option>
-          <option value="Business-Loan">Commercial Loan</option>
-          <option value="Business-Loan">Personal Loan</option>
-          
-          </select>
-          
+          <p> <input type="select" placeholder="How did you hear about us?" name="source-type" id="source-type" />
+            <select name="loan-type"> 
+              <option value="previous-cust">Preious Customer</option>
+              <option value="oakdale">Oakdale Supporter</option>
+              <option value="other">Other, please specify below</option>
+            </select>
           </p>
         </div>
         
-        
-        
-      
-        
-        
-        
-        
-        <div >
-            <p><textarea placeholder="your message" name="comments" id="comments" rows="12" cols="5"></textarea>
-        </p>
+        <div>
+          <p> <input type="text" placeholder="Other, please specify here" name="_othersource" id="other-source" />
+          </p>
         </div>
         
+        <div>
+          <p> I would like to refer:
+          </p>
+        </div>
+        
+        <div>
+          <p> <input type="text" placeholder="their name" name="referred" id="referred" />
+          </p>
+        </div>
+        
+        <div>
+          <p> <input type="text" placeholder="their phone number" name="referred-contact" id="referred-contact" />
+          </p>
+        </div>
+        
+        <div>
+          <p> <input type="text" placeholder="their email" name="referred-email" id="referred-email" />
+          </p>
+        </div>
+
+        <div>
+          <p> <input type="select" placeholder="Interested in..." name="source-type" id="source-type" />
+            <select name="loan-type"> 
+              <option value="car-loan">Car Loan</option>
+              <option value="home-loan">Home Loan</option>
+              <option value="personal-loan">Personal Loan</option>
+              <option value="business-loan">Business Loan</option>
+            </select>
+          </p>
+        </div>      
+  
         <div>
           <p>&nbsp  </p>
         </div>
@@ -64,7 +82,7 @@
 
         <div class="buttoncontact">
           <p>
-          <input type="hidden" name="_to" value="info@acceleratefinancial.com.au">
+          <input type="hidden" name="_to" value="cyndilam_ng@hotmail.com">
           <input type="submit" value="Send Message">
           </p>
       </div>
