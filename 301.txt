@@ -1,5 +1,0 @@
-/privacy.htm /privacy-policies
-/loans.htm /services
-/contact.htm /contact-us
-/about.htm /about
-/services.htm /services
