@@ -78,6 +78,11 @@ export default function HomeFooter() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="hover:text-[#00c5d6] transition-colors">
+                  Blog & Library
+                </Link>
+              </li>
+              <li>
                 <Link href="/apply-now" className="hover:text-[#00c5d6] transition-colors text-[#00c5d6] font-semibold">
                   Apply Now →
                 </Link>

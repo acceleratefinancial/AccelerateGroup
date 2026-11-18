@@ -18,20 +18,26 @@ const lenderList = [
 ];
 
 export default function HomeLenders() {
+  // Two identical halves (each containing 2 sets of logos) for a seamless 1-row loop on all resolutions
+  const singleHalf = [...lenderList, ...lenderList];
+  const marqueeLenders = [...singleHalf, ...singleHalf];
+
   return (
-    <section className="bg-[#071533] py-14 lg:py-16 border-y border-slate-800">
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Title matching Image 3 with cyan accent */}
-        <h3 className="text-center text-white text-lg sm:text-xl lg:text-2xl font-bold tracking-wide mb-10">
+    <section className="bg-[#071533] py-12 lg:py-14 border-y border-slate-800 overflow-hidden">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-10">
+        {/* Title with cyan accent */}
+        <h3 className="text-center text-white text-lg sm:text-xl lg:text-2xl font-bold tracking-wide">
           Trusted By <span className="text-[#00c5d6]">40+ Lenders</span>
         </h3>
+      </div>
 
-        {/* Clean white cards to showcase full-color lender logos clearly on navy background */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 items-center">
-          {lenderList.map((lender) => (
+      {/* 1-Row Continuous Marquee running right to left */}
+      <div className="relative w-full overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-16 sm:before:w-28 md:before:w-44 before:bg-gradient-to-r before:from-[#071533] before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-16 sm:after:w-28 md:after:w-44 after:bg-gradient-to-l after:from-[#071533] after:to-transparent">
+        <div className="animate-marquee flex items-center gap-4 sm:gap-6 py-2">
+          {marqueeLenders.map((lender, index) => (
             <div
-              key={lender.name}
-              className="bg-white rounded-xl shadow-xs border border-white/20 p-3 sm:p-4 h-16 sm:h-20 flex items-center justify-center hover:scale-105 hover:shadow-md transition-all duration-300"
+              key={`${lender.name}-${index}`}
+              className="bg-white rounded-xl shadow-xs border border-white/20 px-4 sm:px-5 py-3 w-44 sm:w-52 h-16 sm:h-20 shrink-0 flex items-center justify-center hover:scale-105 hover:shadow-md transition-all duration-300"
             >
               <Image
                 src={lender.src}

@@ -15,6 +15,7 @@ export default function HomeNavbar() {
     { label: "About Us", href: "/about-us" },
     { label: "Services", href: "/services" },
     { label: "Calculator", href: "/calculator" },
+    { label: "Blog", href: "/blog" },
     { label: "Client Referral", href: "/client-referral" },
     { label: "Contact Us", href: "/#contact" },
   ];
