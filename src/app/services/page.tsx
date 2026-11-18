@@ -145,18 +145,20 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {serviceDetails.map((item) => (
+            {/* Desktop 2 + 3 Arrangement matching Tailored Finance Solutions */}
+            {/* Row 1 – Exactly 2 cards (Personal Loans & Business Loans) */}
+            <div className="max-w-[880px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-6 lg:mb-8">
+              {serviceDetails.slice(0, 2).map((item) => (
                 <div
                   key={item.id}
                   id={item.id}
-                  className="bg-white rounded-2xl p-7 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
+                  className="bg-white rounded-2xl p-7 sm:p-8 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
                 >
                   <div>
-                    <h3 className="text-xl font-bold text-[#06122d] mb-1">
+                    <h3 className="text-xl sm:text-2xl font-bold text-[#06122d] mb-1">
                       {item.title}
                     </h3>
-                    <p className="text-xs font-semibold text-[#00c5d6] uppercase tracking-wider mb-5">
+                    <p className="text-xs font-bold text-[#00c5d6] uppercase tracking-wider mb-5">
                       {item.tagline}
                     </p>
 
@@ -164,7 +166,7 @@ export default function ServicesPage() {
                       {item.points.map((point, idx) => (
                         <li key={idx} className="flex items-start gap-2.5">
                           <CheckCircle2 className="w-4 h-4 text-[#00c5d6] shrink-0 mt-0.5" />
-                          <span>{point}</span>
+                          <span className="leading-snug">{point}</span>
                         </li>
                       ))}
                     </ul>
@@ -173,10 +175,49 @@ export default function ServicesPage() {
                   <div className="pt-4 border-t border-gray-100">
                     <Link
                       href={item.ctaHref}
-                      className="inline-flex items-center gap-2 text-sm font-bold text-[#06122d] hover:text-[#00c5d6] transition-colors"
+                      className="inline-flex items-center gap-2 text-sm font-bold text-[#06122d] hover:text-[#00c5d6] transition-colors group/link"
                     >
                       <span>Explore Loan Options</span>
-                      <ArrowRight className="w-4 h-4" />
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Row 2 – Exactly 3 cards (Salary Packaging, Car Buying, Home Loans) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {serviceDetails.slice(2, 5).map((item) => (
+                <div
+                  key={item.id}
+                  id={item.id}
+                  className="bg-white rounded-2xl p-7 sm:p-8 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
+                >
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-bold text-[#06122d] mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs font-bold text-[#00c5d6] uppercase tracking-wider mb-5">
+                      {item.tagline}
+                    </p>
+
+                    <ul className="space-y-3 mb-6 text-sm text-slate-600">
+                      {item.points.map((point, idx) => (
+                        <li key={idx} className="flex items-start gap-2.5">
+                          <CheckCircle2 className="w-4 h-4 text-[#00c5d6] shrink-0 mt-0.5" />
+                          <span className="leading-snug">{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="pt-4 border-t border-gray-100">
+                    <Link
+                      href={item.ctaHref}
+                      className="inline-flex items-center gap-2 text-sm font-bold text-[#06122d] hover:text-[#00c5d6] transition-colors group/link"
+                    >
+                      <span>Explore Loan Options</span>
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
                     </Link>
                   </div>
                 </div>
