@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Poppins, Lato, Open_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -56,38 +57,28 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${lato.variable} ${openSans.variable} scroll-smooth`}
     >
-      <head>
-        {/* Google Site Verification */}
-        <meta
-          name="google-site-verification"
-          content="82mJCJCKvrJz-xs_BfF3cg14mg7fe27ObB2AA7NOx2s"
-        />
-
-        {/* Google Tag (gtm.js) - Exact container script for GTM-TK5PG59S */}
-        <script
-          async
+      <body className="min-h-screen flex flex-col font-sans text-[#333333] bg-white antialiased">
+        {/* Google Tag (gtm.js) */}
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtm.js?id=GTM-TK5PG59S"
         />
-        <script
+        <Script id="google-tag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          `}
+        </Script>
+
+        {/* Google Tag Manager (noscript) */}
+        <noscript
           dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            `,
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK5PG59S" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         />
-      </head>
-      <body className="min-h-screen flex flex-col font-sans text-[#333333] bg-white antialiased">
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TK5PG59S"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
+
         {children}
       </body>
     </html>

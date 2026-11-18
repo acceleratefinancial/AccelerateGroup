@@ -35,22 +35,22 @@ export default function HomeNavbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xs">
       <div className="max-w-[1340px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between min-h-[90px] lg:min-h-[105px] py-2 gap-4">
-          {/* Logo - Scaled to ~200% on desktop (from ~180px to 340-380px) */}
+        <div className="flex items-center justify-between min-h-[80px] sm:min-h-[90px] lg:min-h-[105px] py-2 gap-2 sm:gap-4">
+          {/* Logo - Sized properly for mobile, desktop scaled to ~360px */}
           <Link href="/" className="flex items-center group shrink-0 py-1">
-            <div className="relative w-[200px] sm:w-[260px] lg:w-[320px] xl:w-[360px] h-[54px] sm:h-[68px] lg:h-[78px] xl:h-[86px]">
+            <div className="relative w-[170px] sm:w-[240px] lg:w-[320px] xl:w-[360px] h-[46px] sm:h-[62px] lg:h-[78px] xl:h-[86px]">
               <Image
                 src="/images/home/logo.png"
                 alt="Accelerate Financial"
                 fill
                 className="object-contain object-left"
                 priority
-                sizes="(max-width: 640px) 200px, (max-width: 1024px) 260px, 360px"
+                sizes="(max-width: 640px) 170px, (max-width: 1024px) 260px, 360px"
               />
             </div>
           </Link>
 
-          {/* Desktop Navigation - Increased font size & bold weight */}
+          {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-5 xl:gap-7 shrink-0">
             {navLinks.map((link) => {
               const active = isLinkActive(link.href);
@@ -73,7 +73,7 @@ export default function HomeNavbar() {
             })}
           </nav>
 
-          {/* Standard Apply Now Button */}
+          {/* Desktop Apply Now Button */}
           <div className="hidden sm:flex items-center shrink-0">
             <Link
               href="/apply-now"
@@ -88,28 +88,35 @@ export default function HomeNavbar() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex items-center gap-2 lg:hidden">
+          {/* Mobile Action Buttons & Menu Trigger */}
+          <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden shrink-0 relative z-20">
             <Link
               href="/apply-now"
-              className="sm:hidden inline-flex items-center gap-1.5 bg-[#00c5d6] text-white text-[11px] font-bold uppercase px-3 py-1.5 rounded-md"
+              className="sm:hidden inline-flex items-center gap-1 bg-[#00c5d6] text-white text-[11px] font-bold uppercase px-2.5 py-1.5 rounded-md shrink-0"
             >
               <span>Apply</span>
               <ArrowRight className="w-3 h-3" />
             </Link>
+
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-gray-700 hover:text-[#00c5d6] transition-colors focus:outline-none cursor-pointer"
+              type="button"
+              onClick={() => setMobileMenuOpen((prev) => !prev)}
+              className="p-2 sm:p-2.5 text-gray-700 hover:text-[#00c5d6] transition-colors focus:outline-hidden cursor-pointer touch-manipulation select-none"
               aria-label="Toggle menu"
+              aria-expanded={mobileMenuOpen}
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? (
+                <X className="w-6 h-6 stroke-[2.5]" />
+              ) : (
+                <Menu className="w-6 h-6 stroke-[2.5]" />
+              )}
             </button>
           </div>
         </div>
 
         {/* Mobile Dropdown Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-gray-100 py-4 bg-white animate-fadeIn">
+          <div className="lg:hidden border-t border-gray-100 py-4 bg-white animate-fadeIn relative z-30">
             <nav className="flex flex-col space-y-1">
               {navLinks.map((link) => {
                 const active = isLinkActive(link.href);
