@@ -42,12 +42,12 @@ export default function CalculatorPage() {
             </div>
 
             {/* Reusable CalculatorWidget component container */}
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <CalculatorWidget />
             </div>
 
             {/* Advisory Disclaimer */}
-            <div className="max-w-4xl mx-auto mt-8 p-5 rounded-xl bg-white border border-gray-200/80 text-xs text-slate-500 flex items-start gap-3">
+            <div className="max-w-5xl mx-auto mt-8 p-5 rounded-xl bg-white border border-gray-200/80 text-xs text-slate-500 flex items-start gap-3">
               <HelpCircle className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
               <p className="leading-relaxed">
                 <strong>Important Notice:</strong> Calculations and figures provided by financial calculators are illustrative estimates only and do not constitute an offer of credit or financial advice. Actual loan approval, interest rates, fees, and repayment schedules depend on individual applicant circumstances and lender assessment.

@@ -11,9 +11,9 @@ import { servicesRow1, servicesRow2 } from "@/data/servicesData";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Loan Services – Accelerate Financial",
+  title: "Our Loan Services – Accelerate Financial Solutions",
   description:
-    "Explore tailored personal, business, car buying, salary packaging, and home loan solutions from Accelerate Financial.",
+    "Compare loans across 40+ lenders with Accelerate Financial Solutions in Adelaide. Expert brokers for Personal Loans, Business Loans, Salary Packaging, Car Buying & Home Loans.",
 };
 
 const serviceDetails = [
@@ -89,7 +89,7 @@ export default function ServicesPage() {
         <PageHero
           title="Our Services"
           eyebrow="What We Offer"
-          description="Specialized finance solutions tailored to your individual and commercial goals. We compare 40+ lenders to secure competitive rates and flexible loan structures."
+          description="Compare loans across 40+ lenders with Accelerate Financial Solutions in Adelaide. Expert brokers for Personal Loans, Business Loans, Salary Packaging, Car Buying & Home Loans."
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Services" },
@@ -99,15 +99,20 @@ export default function ServicesPage() {
         {/* Main 2 + 3 Services Showcase (matching homepage exact design) */}
         <section className="py-20 lg:py-24 bg-white" id="services-grid">
           <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-2xl mx-auto mb-14">
-              <SectionEyebrow text="Comprehensive Lending" />
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <SectionEyebrow text="Tailored Finance" />
 
-              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#06122d] leading-tight">
-                We Provide Best Services <br />
-                For Your Loan
+              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#06122d] leading-tight mb-4">
+                Tailored Finance Solutions for Every Stage of Life
               </h2>
-              <p className="text-slate-500 text-sm sm:text-base mt-3">
-                Click any service card to view loan features, benefits, and tailored financing options.
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                With hundreds of loan products on the market, finding the right one shouldn&apos;t
+                feel overwhelming. At Accelerate Financial Solutions, our Adelaide-based brokers
+                compare options across more than 40 banks and specialist lenders to secure
+                competitive rates and flexible terms tailored to your personal or commercial goals.
+              </p>
+              <p className="text-slate-400 text-xs sm:text-sm mt-3 font-medium">
+                Click any service card below to view loan features, benefits, and tailored financing options.
               </p>
             </div>
 
