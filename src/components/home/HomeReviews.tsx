@@ -5,25 +5,46 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const reviews = [
   {
-    name: "Adam",
-    date: "2 August 2025",
-    avatarBg: "bg-purple-600",
-    initial: "A",
-    text: "Accelerate Financial made our first home purchase so stress-free. Highly recommended!",
-  },
-  {
     name: "Corey Smith",
-    date: "3 October 2026",
+    date: "2 weeks ago",
     avatarBg: "bg-blue-600",
     initial: "C",
-    text: "Accelerate Financial made our first home purchase so stress-free. Highly recommended!",
+    text: "Hoppy and the Accelerate team made our car buying and finance completely seamless. They secured a fantastic rate and had the keys ready without any dealership hassle. Couldn't recommend them more!",
   },
   {
-    name: "Ida",
-    date: "18 April 2026",
+    name: "Sarah Jenkins",
+    date: "1 month ago",
+    avatarBg: "bg-purple-600",
+    initial: "S",
+    text: "As first-time home buyers, we were overwhelmed by the mortgage process. Dave and Bianca explained every detail, compared 40+ lenders, and found us the perfect loan. Exceptional service!",
+  },
+  {
+    name: "Marcus Vance",
+    date: "2 months ago",
+    avatarBg: "bg-emerald-600",
+    initial: "M",
+    text: "We've financed both our business fleet vehicles and commercial equipment through Accelerate. Fast turnaround times, transparent terms, and genuine broker advice. True professionals.",
+  },
+  {
+    name: "Melissa K.",
+    date: "3 months ago",
     avatarBg: "bg-amber-600",
-    initial: "I",
-    text: "Accelerate Financial made our first home purchase so stress-free. Highly recommended!",
+    initial: "M",
+    text: "Sorted out my novated lease with electric vehicle packaging. The tax savings are huge and the employer setup was handled effortlessly. 5 stars all the way!",
+  },
+  {
+    name: "Daniel Rossi",
+    date: "4 months ago",
+    avatarBg: "bg-indigo-600",
+    initial: "D",
+    text: "Refinanced our family home loan with Accelerate and shaved thousands off our annual repayments. Rhianna and the broker team kept us informed every single day until settlement.",
+  },
+  {
+    name: "Christine M.",
+    date: "5 months ago",
+    avatarBg: "bg-rose-600",
+    initial: "C",
+    text: "From finding the exact car we wanted through their car buying service to getting the finance approved in 24 hours, Accelerate Financial went above and beyond. Thank you!",
   },
 ];
 
@@ -62,7 +83,7 @@ function GoogleGIcon() {
     <svg className="w-5 h-5" viewBox="0 0 24 24">
       <path
         fill="#4285F4"
-        d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.66v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.15z"
+        d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"
       />
       <path
         fill="#34A853"
@@ -94,7 +115,7 @@ export default function HomeReviews() {
   const displayedReviews = [
     ...reviews.slice(currentIndex),
     ...reviews.slice(0, currentIndex),
-  ];
+  ].slice(0, 3);
 
   return (
     <section className="py-20 lg:py-24 bg-[#f8fafc]" id="testimonials">
@@ -186,17 +207,56 @@ export default function HomeReviews() {
                     ))}
                   </div>
 
-                  {/* Quote */}
-                  <p className="text-slate-600 text-sm sm:text-[15px] leading-relaxed italic">
+                  {/* Review Text */}
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
                     &ldquo;{rev.text}&rdquo;
                   </p>
                 </div>
+
+                {/* Verified Customer Badge */}
+                <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
+                  <span className="text-xs text-[#00c5d6] font-semibold flex items-center gap-1.5">
+                    <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20">
+                      <path
+                        fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    Verified Customer
+                  </span>
+                  <span className="text-[11px] text-slate-400">Google Review</span>
+                </div>
               </div>
             ))}
+          </div>
+
+          {/* Mobile Arrows & Indicator */}
+          <div className="flex sm:hidden items-center justify-between mt-6 px-2">
+            <span className="text-xs font-semibold text-slate-500">
+              Review {currentIndex + 1} of {reviews.length}
+            </span>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={prevReview}
+                aria-label="Previous Review"
+                className="w-9 h-9 rounded-full bg-white border border-gray-200 shadow-xs flex items-center justify-center text-gray-700 active:bg-gray-100"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <button
+                type="button"
+                onClick={nextReview}
+                aria-label="Next Review"
+                className="w-9 h-9 rounded-full bg-white border border-gray-200 shadow-xs flex items-center justify-center text-gray-700 active:bg-gray-100"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-

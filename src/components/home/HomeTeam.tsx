@@ -2,71 +2,74 @@ import React from "react";
 import Image from "next/image";
 import SectionEyebrow from "@/components/shared/SectionEyebrow";
 
-// Row 1 – Leadership Team (4 members in exact specified order from Image 5)
+// Row 1 – Leadership Team (4 members in exact specified order)
 const leadershipTeam = [
   {
     name: 'Andrew "Hoppy" Hopkins',
     displayName: "Hoppy",
     role: "Director",
     image: "/images/home/team-1.png",
+    objectPosition: "object-center",
   },
   {
     name: "David Manou",
     displayName: "Dave",
     role: "Director",
-    image: "/images/home/team-2.png",
+    image: "/images/home/team-dave-new.png",
+    objectPosition: "object-center",
   },
   {
     name: "Rhianna",
     displayName: "Rhianna",
     role: "BDM Leader",
-    image: "/images/home/team-3.png",
+    image: "/images/home/team-rhianna-new.png",
+    objectPosition: "object-center",
   },
   {
     name: "Bianca",
     displayName: "Bianca",
     role: "Team Leader",
-    image: "/images/home/team-4.png",
+    image: "/images/home/team-bianca-new.png",
+    objectPosition: "object-top",
   },
 ];
 
-// Row 2 – Brokers (6 members, all with title Broker from Image 5)
+// Row 2 – Brokers (5 members as per updated specifications)
 const brokersTeam = [
   {
-    name: "Laurence Camporeale",
-    displayName: "Laurence",
+    name: "Russell",
+    displayName: "Russell",
     role: "Broker",
-    image: "/images/home/team-6.png",
+    image: "/images/home/team-placeholder.png",
+    isPlaceholder: true,
   },
   {
-    name: "Stefanie",
-    displayName: "Stef",
+    name: "Scott",
+    displayName: "Scott",
     role: "Broker",
-    image: "/images/home/team-7.png",
+    image: "/images/home/team-placeholder.png",
+    isPlaceholder: true,
   },
   {
-    name: "Stuart",
-    displayName: "Stuart",
+    name: "Dan",
+    displayName: "Dan",
     role: "Broker",
-    image: "/images/home/team-8.png",
+    image: "/images/home/team-dan.png",
+    isPlaceholder: false,
   },
   {
-    name: "Kayla",
-    displayName: "Kayla",
+    name: "Mike",
+    displayName: "Mike",
     role: "Broker",
-    image: "/images/home/team-9.png",
+    image: "/images/home/team-mike.png",
+    isPlaceholder: false,
   },
   {
-    name: "Taylor",
-    displayName: "Taylor",
+    name: "Ronnie",
+    displayName: "Ronnie",
     role: "Broker",
-    image: "/images/home/team-5.png",
-  },
-  {
-    name: "Broker Specialist",
-    displayName: "Broker Specialist",
-    role: "Broker",
-    image: "/images/laurence-camporeale.jpg",
+    image: "/images/home/team-ronnie.png",
+    isPlaceholder: false,
   },
 ];
 
@@ -81,13 +84,16 @@ export default function HomeTeam() {
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#06122d] leading-tight">
             Our Awesome Team
           </h2>
+          <p className="text-slate-500 text-sm sm:text-base mt-3">
+            Experienced Adelaide finance brokers dedicated to finding you the right loan structuring.
+          </p>
         </div>
 
         {/* Row 1: Leadership Team (4 Members on Desktop) */}
-        <div className="mb-10">
+        <div className="mb-14">
           <div className="text-center mb-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
-              Leadership Team (4 members)
+            <span className="text-xs font-bold uppercase tracking-widest text-[#00c5d6]">
+              Leadership Team
             </span>
           </div>
 
@@ -95,7 +101,7 @@ export default function HomeTeam() {
             {leadershipTeam.map((member) => (
               <div
                 key={member.displayName}
-                className="group relative rounded-xl overflow-hidden bg-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col"
+                className="group relative rounded-2xl overflow-hidden bg-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col"
               >
                 {/* Photo */}
                 <div className="relative aspect-[3/4] w-full overflow-hidden bg-slate-200">
@@ -103,14 +109,14 @@ export default function HomeTeam() {
                     src={member.image}
                     alt={`${member.displayName} - ${member.role}`}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`object-cover ${member.objectPosition || "object-center"} group-hover:scale-105 transition-transform duration-500`}
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
 
                 {/* Info Card at Bottom */}
-                <div className="p-4 bg-white flex flex-col justify-center border-t border-gray-100">
-                  <h3 className="font-bold text-base text-[#06122d] leading-snug group-hover:text-[#00c5d6] transition-colors">
+                <div className="p-4 sm:p-5 bg-white flex flex-col justify-center border-t border-gray-100">
+                  <h3 className="font-bold text-base sm:text-lg text-[#06122d] leading-snug group-hover:text-[#00c5d6] transition-colors">
                     {member.displayName}
                   </h3>
                   <p className="text-xs font-bold text-[#00c5d6] uppercase tracking-wider mt-0.5">
@@ -122,34 +128,38 @@ export default function HomeTeam() {
           </div>
         </div>
 
-        {/* Row 2: Brokers (6 Members on Desktop) */}
+        {/* Row 2: Brokers (5 Members on Desktop) */}
         <div>
           <div className="text-center mb-6">
             <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
-              Brokers (6 members)
+              Brokers
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto">
             {brokersTeam.map((member, i) => (
               <div
                 key={`${member.displayName}-${i}`}
-                className="group relative rounded-xl overflow-hidden bg-slate-100 shadow-xs hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col"
+                className="group relative rounded-2xl overflow-hidden bg-slate-50 shadow-xs hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col"
               >
                 {/* Photo */}
-                <div className="relative aspect-[3/4] w-full overflow-hidden bg-slate-200">
+                <div className="relative aspect-[3/4] w-full overflow-hidden bg-slate-100 flex items-center justify-center">
                   <Image
                     src={member.image}
                     alt={`${member.displayName} - ${member.role}`}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                    className={
+                      member.isPlaceholder
+                        ? "object-contain p-6 opacity-80 group-hover:scale-105 transition-transform duration-500"
+                        : "object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    }
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
                   />
                 </div>
 
                 {/* Info Card at Bottom */}
-                <div className="p-3 bg-white flex flex-col justify-center border-t border-gray-100">
-                  <h4 className="font-bold text-sm text-[#06122d] leading-snug truncate group-hover:text-[#00c5d6] transition-colors">
+                <div className="p-3.5 bg-white flex flex-col justify-center border-t border-gray-100 text-center">
+                  <h4 className="font-bold text-sm sm:text-base text-[#06122d] leading-snug truncate group-hover:text-[#00c5d6] transition-colors">
                     {member.displayName}
                   </h4>
                   <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-0.5">
