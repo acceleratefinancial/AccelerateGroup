@@ -89,10 +89,10 @@ export default function HomeNavbar() {
           </div>
 
           {/* Mobile Action Buttons & Menu Trigger */}
-          <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden shrink-0 relative z-20">
+          <div className="flex items-center gap-1.5 sm:gap-2 lg:hidden shrink-0 relative z-30">
             <Link
               href="/apply-now"
-              className="sm:hidden inline-flex items-center gap-1 bg-[#00c5d6] text-white text-[11px] font-bold uppercase px-2.5 py-1.5 rounded-md shrink-0"
+              className="sm:hidden inline-flex items-center gap-1 bg-[#00c5d6] text-white text-[11px] font-bold uppercase px-2.5 py-1.5 rounded-md shrink-0 active:scale-95 transition-transform"
             >
               <span>Apply</span>
               <ArrowRight className="w-3 h-3" />
@@ -101,7 +101,7 @@ export default function HomeNavbar() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen((prev) => !prev)}
-              className="p-2 sm:p-2.5 text-gray-700 hover:text-[#00c5d6] transition-colors focus:outline-hidden cursor-pointer touch-manipulation select-none"
+              className="w-11 h-11 flex items-center justify-center rounded-lg text-gray-700 hover:text-[#00c5d6] hover:bg-gray-50 active:bg-gray-100 transition-colors focus:outline-hidden cursor-pointer touch-manipulation select-none"
               aria-label="Toggle menu"
               aria-expanded={mobileMenuOpen}
             >
@@ -116,7 +116,7 @@ export default function HomeNavbar() {
 
         {/* Mobile Dropdown Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-gray-100 py-4 bg-white animate-fadeIn relative z-30">
+          <div className="lg:hidden border-t border-gray-100 py-4 bg-white animate-fadeIn relative z-40 shadow-xl rounded-b-xl">
             <nav className="flex flex-col space-y-1">
               {navLinks.map((link) => {
                 const active = isLinkActive(link.href);
