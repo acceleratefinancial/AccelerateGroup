@@ -57,6 +57,12 @@ export default function RootLayout({
       className={`${poppins.variable} ${lato.variable} ${openSans.variable} scroll-smooth`}
     >
       <head>
+        {/* Google Site Verification */}
+        <meta
+          name="google-site-verification"
+          content="82mJCJCKvrJz-xs_BfF3cg14mg7fe27ObB2AA7NOx2s"
+        />
+
         {/* Google Tag (gtm.js) - Exact container script for GTM-TK5PG59S */}
         <script
           async
