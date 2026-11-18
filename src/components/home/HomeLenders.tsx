@@ -18,33 +18,34 @@ const lenderList = [
 ];
 
 export default function HomeLenders() {
-  // Two identical halves (each containing 2 sets of logos) for a seamless 1-row loop on all resolutions
-  const singleHalf = [...lenderList, ...lenderList];
-  const marqueeLenders = [...singleHalf, ...singleHalf];
+  // Duplicate list once to achieve a seamless, continuous right-to-left loop (24 items total)
+  const marqueeLenders = [...lenderList, ...lenderList];
 
   return (
-    <section className="bg-[#071533] py-12 lg:py-14 border-y border-slate-800 overflow-hidden">
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-10">
+    <section className="bg-[#071533] py-10 sm:py-12 lg:py-14 border-y border-slate-800 overflow-hidden">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
         {/* Title with cyan accent */}
-        <h3 className="text-center text-white text-lg sm:text-xl lg:text-2xl font-bold tracking-wide">
+        <h3 className="text-center text-white text-base sm:text-xl lg:text-2xl font-bold tracking-wide">
           Trusted By <span className="text-[#00c5d6]">40+ Lenders</span>
         </h3>
       </div>
 
       {/* 1-Row Continuous Marquee running right to left */}
-      <div className="relative w-full overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-16 sm:before:w-28 md:before:w-44 before:bg-gradient-to-r before:from-[#071533] before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-16 sm:after:w-28 md:after:w-44 after:bg-gradient-to-l after:from-[#071533] after:to-transparent">
-        <div className="animate-marquee flex items-center gap-4 sm:gap-6 py-2">
+      <div className="relative w-full overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-8 sm:before:w-20 md:before:w-36 before:bg-gradient-to-r before:from-[#071533] before:to-transparent before:pointer-events-none after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-8 sm:after:w-20 md:after:w-36 after:bg-gradient-to-l after:from-[#071533] after:to-transparent after:pointer-events-none">
+        <div className="animate-marquee flex items-center gap-3 sm:gap-6 py-2">
           {marqueeLenders.map((lender, index) => (
             <div
               key={`${lender.name}-${index}`}
-              className="bg-white rounded-xl shadow-xs border border-white/20 px-4 sm:px-5 py-3 w-44 sm:w-52 h-16 sm:h-20 shrink-0 flex items-center justify-center hover:scale-105 hover:shadow-md transition-all duration-300"
+              className="bg-white rounded-xl shadow-xs border border-white/20 px-3 sm:px-5 py-2.5 sm:py-3 w-38 sm:w-52 h-14 sm:h-20 shrink-0 flex items-center justify-center hover:scale-105 hover:shadow-md transition-all duration-300"
             >
               <Image
                 src={lender.src}
                 alt={`${lender.name} Logo`}
                 width={lender.width}
                 height={lender.height}
-                className="max-h-9 sm:max-h-11 w-auto object-contain"
+                loading="eager"
+                priority={index < 12}
+                className="max-h-7 sm:max-h-11 w-auto object-contain"
               />
             </div>
           ))}

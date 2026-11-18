@@ -48,7 +48,7 @@ body {
   display: flex;
   width: max-content;
   will-change: transform;
-  animation: marquee 50s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 .animate-marquee:hover {
