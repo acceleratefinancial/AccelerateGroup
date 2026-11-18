@@ -57,6 +57,7 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${lato.variable} ${openSans.variable} scroll-smooth`}
     >
+      <head />
       <body className="min-h-screen flex flex-col font-sans text-[#333333] bg-white antialiased">
         {/* Google Tag (gtm.js) */}
         <Script
