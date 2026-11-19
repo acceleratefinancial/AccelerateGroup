@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import SectionEyebrow from "@/components/shared/SectionEyebrow";
 
 const reviews = [
   {
@@ -122,28 +123,43 @@ export default function HomeReviews() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Google Rating Header */}
         <div className="flex flex-col items-center justify-center text-center mb-14">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#06122d] mb-1.5">
-            Excellent
-          </h2>
+          <SectionEyebrow text="Client Reviews" />
 
-          {/* 5 Yellow Stars */}
-          <div className="flex items-center gap-1 mb-1.5">
-            {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                className="w-6 h-6 fill-amber-400 text-amber-400"
-              />
-            ))}
-          </div>
+          <a
+            href="https://www.google.com/search?q=accelerate+financial+adelaide"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex flex-col items-center p-3 rounded-2xl hover:bg-white/80 transition-all duration-300"
+            title="Read Accelerate Financial 5-star reviews on Google"
+          >
+            {/* Rating Number & 5 Stars */}
+            <div className="flex items-center gap-2.5 sm:gap-3 mb-1.5">
+              <span className="text-3xl sm:text-4xl font-extrabold text-[#06122d] tracking-tight">
+                5.0
+              </span>
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="w-5 sm:w-6 h-5 sm:h-6 fill-amber-400 text-amber-400"
+                  />
+                ))}
+              </div>
+            </div>
 
-          <p className="text-slate-600 text-sm font-medium mb-3">
-            Based on <span className="font-bold text-[#06122d]">1,347 reviews</span>
-          </p>
+            <p className="text-slate-600 text-sm font-medium mb-2.5">
+              Based on{" "}
+              <span className="font-bold text-[#06122d]">360+ Google reviews</span>
+            </p>
 
-          {/* Google Wordmark */}
-          <div className="flex items-center justify-center">
-            <GoogleWordmark />
-          </div>
+            {/* Google Wordmark & Link */}
+            <div className="flex items-center gap-2">
+              <GoogleWordmark />
+              <span className="text-xs font-semibold text-[#00c5d6] group-hover:underline flex items-center gap-1">
+                Read all reviews →
+              </span>
+            </div>
+          </a>
         </div>
 
         {/* Carousel & Cards Container */}

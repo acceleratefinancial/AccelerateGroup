@@ -40,7 +40,7 @@ export default function HomePage() {
         {/* 5. Why Choose Us: Happy Snaps & Head Office Showcase */}
         <HomeWhyChooseUs />
 
-        {/* 6. Google Reviews: Excellent (1,347 reviews) */}
+        {/* 6. Google Reviews: 5.0 Rating (360+ reviews) */}
         <HomeReviews />
 
         {/* 7. Expert Advisors: Our Awesome Team (9 members) */}
