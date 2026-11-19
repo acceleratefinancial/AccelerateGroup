@@ -136,7 +136,7 @@ export default function HomeTeam() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
             {brokersTeam.map((member, i) => (
               <div
                 key={`${member.displayName}-${i}`}
@@ -153,16 +153,16 @@ export default function HomeTeam() {
                         ? "object-contain p-6 opacity-80 group-hover:scale-105 transition-transform duration-500"
                         : "object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     }
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 20vw"
                   />
                 </div>
 
                 {/* Info Card at Bottom */}
-                <div className="p-3.5 bg-white flex flex-col justify-center border-t border-gray-100 text-center">
-                  <h4 className="font-bold text-sm sm:text-base text-[#06122d] leading-snug truncate group-hover:text-[#00c5d6] transition-colors">
+                <div className="p-4 sm:p-5 bg-white flex flex-col justify-center border-t border-gray-100">
+                  <h4 className="font-bold text-base sm:text-lg text-[#06122d] leading-snug truncate group-hover:text-[#00c5d6] transition-colors">
                     {member.displayName}
                   </h4>
-                  <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-0.5">
+                  <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mt-0.5">
                     {member.role}
                   </p>
                 </div>
