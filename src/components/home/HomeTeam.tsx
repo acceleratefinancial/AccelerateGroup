@@ -8,7 +8,7 @@ const leadershipTeam = [
     name: 'Andrew "Hoppy" Hopkins',
     displayName: "Hoppy",
     role: "Director",
-    image: "/images/home/team-1.png",
+    image: "/images/home/team-hoppy-new.png",
     objectPosition: "object-center",
   },
   {
@@ -30,7 +30,7 @@ const leadershipTeam = [
     displayName: "Bianca",
     role: "Team Leader",
     image: "/images/home/team-bianca-new.png",
-    objectPosition: "object-top",
+    objectPosition: "object-center",
   },
 ];
 
@@ -151,7 +151,7 @@ export default function HomeTeam() {
                     className={
                       member.isPlaceholder
                         ? "object-contain p-6 opacity-80 group-hover:scale-105 transition-transform duration-500"
-                        : "object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                        : "object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     }
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
                   />
