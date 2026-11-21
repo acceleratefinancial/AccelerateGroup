@@ -47,7 +47,7 @@ const serviceDetails = [
     tagline: "Tax-effective vehicle and asset packaging",
     points: [
       "Novated leasing options for new, used, and electric vehicles",
-      "Pre-tax salary deductions to maximize net income",
+      "Pre-tax salary deductions to maximise net income",
       "Comprehensive fleet discount access",
       "Simple employer-friendly administration",
     ],
@@ -56,12 +56,12 @@ const serviceDetails = [
   {
     id: "car-details",
     title: "Car Buying Solutions",
-    tagline: "Tender-based car procurement and finance",
+    tagline: "Expert car procurement and finance",
     points: [
       "Wholesale fleet pricing through our national dealer network",
       "Complete negotiation handled on your behalf",
       "Flexible consumer and commercial vehicle loan options",
-      "Trade-in assistance and door-to-door delivery",
+      "Trade-in assistance and end to end service",
     ],
     ctaHref: "/apply-now",
   },
@@ -141,7 +141,7 @@ export default function ServicesPage() {
                 Service Details &amp; Solutions
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Detailed breakdowns of our specialized finance options. Each loan scenario is individually analyzed by our licensed brokers.
+                Detailed breakdowns of our specialised finance options. Each loan scenario is individually analysed by our licensed brokers.
               </p>
             </div>
 

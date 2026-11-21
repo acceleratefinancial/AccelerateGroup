@@ -23,7 +23,7 @@ export default function HomeFooter() {
             </Link>
 
             <p className="text-xs sm:text-[13px] text-slate-400 leading-relaxed max-w-sm">
-              Accelerate Financial provides specialized mortgage, vehicle, and commercial finance structuring with competitive rates and seasoned advisory across Australia.
+              Accelerate Financial provides specialised mortgage, vehicle, and commercial finance structuring with competitive rates and seasoned advisory across Australia.
             </p>
 
             <div className="space-y-2 text-xs sm:text-[13px] text-slate-300 pt-1">

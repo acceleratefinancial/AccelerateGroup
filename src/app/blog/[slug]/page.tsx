@@ -304,7 +304,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                       {post.author.role} • Accelerate Financial Solutions
                     </p>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                      Backed by 20+ years of Australian finance industry experience, the Accelerate Financial team specializes in tailored personal lending, equipment procurement, and commercial mortgage structuring across South Australia.
+                      Backed by 20+ years of Australian finance industry experience, the Accelerate Financial team specialises in tailored personal lending, equipment procurement, and commercial mortgage structuring across South Australia.
                     </p>
                     <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
                       <a

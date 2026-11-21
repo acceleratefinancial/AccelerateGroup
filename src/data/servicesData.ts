@@ -50,11 +50,11 @@ export const servicesRow2: ServiceCardData[] = [
     title: "Salary Packaging & Novated Leases",
     frontTitle: "Salary Packaging",
     frontDesc:
-      "Maximize your take-home pay and tax efficiencies with compliant novated leasing and fleet discounts.",
+      "Maximise your take-home pay and tax efficiencies with compliant novated leasing and fleet discounts.",
     backEyebrow: "TAX-EFFECTIVE VEHICLE AND ASSET PACKAGING",
     features: [
       "Novated leasing options for new, used, and electric vehicles",
-      "Pre-tax salary deductions to maximize net income",
+      "Pre-tax salary deductions to maximise net income",
       "Comprehensive fleet discount access",
       "Simple employer-friendly administration",
     ],
@@ -67,12 +67,12 @@ export const servicesRow2: ServiceCardData[] = [
     frontTitle: "Car Buying",
     frontDesc:
       "Expert vehicle procurement and tailored vehicle finance without dealership hassle.",
-    backEyebrow: "TENDER-BASED CAR PROCUREMENT AND FINANCE",
+    backEyebrow: "EXPERT CAR PROCUREMENT AND FINANCE",
     features: [
       "Wholesale fleet pricing through our national dealer network",
       "Complete negotiation handled on your behalf",
       "Flexible consumer and commercial vehicle loan options",
-      "Trade-in assistance and door-to-door delivery",
+      "Trade-in assistance and end to end service",
     ],
     image: "/images/home/service-car.png",
     href: "/services#car-details",

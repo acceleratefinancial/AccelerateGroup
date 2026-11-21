@@ -26,7 +26,7 @@ export default function HomeLenders() {
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
         {/* Title with cyan accent */}
         <h3 className="text-center text-white text-base sm:text-xl lg:text-2xl font-bold tracking-wide">
-          Trusted By <span className="text-[#00c5d6]">40+ Lenders</span>
+          Access to <span className="text-[#00c5d6]">40+ lenders.</span>
         </h3>
       </div>
 

@@ -57,13 +57,17 @@ export default function PageHero({
             </nav>
           )}
 
-          {/* Eyebrow */}
-          {eyebrow && <SectionEyebrow text={eyebrow} align="left" />}
-
           {/* Page Title */}
-          <h1 className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-white leading-tight tracking-tight mb-4">
+          <h1 className="text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-white leading-tight tracking-tight mb-3">
             {title}
           </h1>
+
+          {/* Eyebrow (swapped below title as requested) */}
+          {eyebrow && (
+            <div className="mb-4">
+              <SectionEyebrow text={eyebrow} align="left" />
+            </div>
+          )}
 
           {/* Description */}
           {description && (

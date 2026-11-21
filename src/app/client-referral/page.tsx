@@ -9,7 +9,7 @@ import ReferralForm from "@/components/referral/ReferralForm";
 import { PhoneCall, Mail, ArrowRight, Gift } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Client Referral Program – Accelerate Financial",
+  title: "Easy Referral – Accelerate Financial",
   description:
     "Introduce friends, family, or colleagues to Accelerate Financial. Our way of saying thanks with exceptional lending outcomes and referral rewards.",
 };
@@ -40,12 +40,12 @@ export default function ClientReferralPage() {
       <main className="flex-1">
         {/* Page Hero */}
         <PageHero
-          title="Client Referral Program"
+          title="Easy Referral"
           eyebrow="Our Way Of Saying Thanks"
           description="At Accelerate Financial, word of mouth is our greatest compliment. Introduce friends, family, or business associates to receive dedicated lending advisory and referral rewards."
           breadcrumbs={[
             { label: "Home", href: "/" },
-            { label: "Client Referral" },
+            { label: "Easy Referral" },
           ]}
         />
 

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo, useRef } from "react";
+import Image from "next/image";
 import {
   ArrowLeft,
   ArrowRight,
@@ -153,20 +154,16 @@ export default function CalculatorWidget() {
       ref={widgetTopRef}
       className="w-full bg-white rounded-2xl border border-gray-200/80 shadow-2xl overflow-hidden text-[#06122d]"
     >
-      {/* Top Banner Header with New Accelerate Logo */}
+      {/* Top Banner Header with Official Accelerate Logo */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between px-6 sm:px-8 py-5 border-b border-gray-100 gap-4 bg-white">
         <div className="flex items-center gap-2">
-          <div className="flex flex-col">
-            <div className="relative inline-block">
-              <span className="text-2xl sm:text-3xl font-black italic tracking-wider text-[#00205B] leading-none select-none">
-                ACCELERATE
-              </span>
-              <div className="h-1.5 w-full bg-gradient-to-r from-[#0082CA] to-[#33A0E2] rounded-full mt-0.5" />
-            </div>
-            <span className="text-xs sm:text-sm italic tracking-widest text-slate-500 font-medium -mt-0.5 select-none">
-              financial solutions
-            </span>
-          </div>
+          <Image
+            src="/images/home/logo.png"
+            alt="Accelerate Financial Solutions"
+            width={220}
+            height={52}
+            className="h-9 sm:h-10 w-auto object-contain"
+          />
         </div>
         <div className="text-left sm:text-right">
           <span className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-400">

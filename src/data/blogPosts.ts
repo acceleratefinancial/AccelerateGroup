@@ -60,7 +60,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "Avoid draining working capital to purchase depreciating capital assets—use tailored chattel mortgages instead.",
       "Lenders scrutinize ATO tax portal debts; proactive refinancing is significantly cheaper than ATO interest penalties.",
       "Establishing pre-approved asset finance facilities prevents project bottlenecks during peak seasonal demand.",
-      "Review commercial debt facilities every 12 to 18 months across our 40+ lending panel to optimize borrowing terms.",
+      "Review commercial debt facilities every 12 to 18 months across our 40+ lending panel to optimise borrowing terms.",
     ],
     sections: [
       {
@@ -78,8 +78,8 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Chattel Mortgages vs. Operating Leases: Choosing the Right Structure",
         paragraphs: [
-          "Structuring business asset acquisitions correctly provides dual benefits: preserving cash on hand and optimizing taxation outcomes with your accountant. Depending on your business structure and GST registration, a chattel mortgage allows you to claim the GST component upfront on your next BAS, while depreciating the asset over its useful operational life.",
-          "For high-turnover vehicle fleets or specialized technology that requires updating every 3 to 4 years, an operating lease or structured balloon payment can significantly reduce monthly commitment figures, keeping operational overhead predictable.",
+          "Structuring business asset acquisitions correctly provides dual benefits: preserving cash on hand and optimising taxation outcomes with your accountant. Depending on your business structure and GST registration, a chattel mortgage allows you to claim the GST component upfront on your next BAS, while depreciating the asset over its useful operational life.",
+          "For high-turnover vehicle fleets or specialised technology that requires updating every 3 to 4 years, an operating lease or structured balloon payment can significantly reduce monthly commitment figures, keeping operational overhead predictable.",
         ],
         bullets: [
           "Chattel Mortgage: Ideal for businesses seeking immediate asset ownership and upfront GST input tax credit claims.",
@@ -116,9 +116,9 @@ export const BLOG_POSTS: BlogPost[] = [
     coverImage: "/images/family-moving-into-new-home-slider.jpg",
     coverImageAlt: "Family celebrating successful home purchase and mortgage approval",
     author: {
-      name: "Laurence Camporeale",
-      role: "Senior Mortgage & Residential Finance Broker",
-      avatar: "/images/laurence-camporeale.jpg",
+      name: "Andrew Hopkins",
+      role: "Director & Commercial Finance Specialist",
+      avatar: "/images/andrew-hoppy-hopkins.jpg",
       email: "approvals@acceleratefinancial.com.au",
     },
     tags: ["Home Loans", "Refinancing", "Equity Release", "Property"],
@@ -305,7 +305,7 @@ export function getRelatedPosts(currentSlug: string, limit = 3): BlogPost[] {
 
   return BLOG_POSTS.filter((p) => p.slug !== currentSlug)
     .sort((a, b) => {
-      // Prioritize same category
+      // Prioritise same category
       if (a.category === current.category && b.category !== current.category) return -1;
       if (b.category === current.category && a.category !== current.category) return 1;
       return new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime();

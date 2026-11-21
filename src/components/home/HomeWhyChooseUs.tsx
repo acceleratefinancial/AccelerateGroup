@@ -125,7 +125,7 @@ export default function HomeWhyChooseUs() {
 
           {/* Right: Stacked Photo Cards with Arrows (Happy Snaps) */}
           <div className="lg:col-span-6 flex flex-col items-center">
-            <div className="relative w-full max-w-[460px] aspect-[4/3] sm:aspect-[16/11] mx-auto flex items-center justify-center select-none py-4">
+            <div className="relative w-full max-w-[440px] aspect-[4/4.6] sm:aspect-[4/4.3] mx-auto flex items-center justify-center select-none py-4">
               {happySnaps.map((snap, index) => {
                 // Calculate distance from active snap
                 const offset =
@@ -156,13 +156,13 @@ export default function HomeWhyChooseUs() {
                     role="button"
                     aria-label={`View snap ${index + 1}`}
                   >
-                    <div className="relative w-full h-[78%] sm:h-[80%] rounded-xl overflow-hidden bg-slate-100">
+                    <div className="relative w-full h-[82%] sm:h-[84%] rounded-xl overflow-hidden bg-slate-50 flex items-center justify-center">
                       <Image
                         src={snap.src}
                         alt={snap.alt}
                         fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 90vw, 460px"
+                        className="object-contain p-1"
+                        sizes="(max-width: 640px) 90vw, 440px"
                         priority={index === 0}
                       />
                       {offset === 0 && (
@@ -175,7 +175,7 @@ export default function HomeWhyChooseUs() {
                       )}
                     </div>
 
-                    <div className="h-[22%] sm:h-[20%] flex items-center px-2 pt-1 text-slate-800">
+                    <div className="h-[18%] sm:h-[16%] flex items-center px-2 pt-1 text-slate-800">
                       <p className="text-xs sm:text-[13px] font-bold truncate text-[#071533]">
                         {snap.caption}
                       </p>

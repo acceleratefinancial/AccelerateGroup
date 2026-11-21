@@ -21,7 +21,7 @@ const leadershipTeam = [
   {
     name: "Rhianna",
     displayName: "Rhianna",
-    role: "BDM Leader",
+    role: "Business Development Manager",
     image: "/images/home/team-rhianna-new.png",
     objectPosition: "object-center",
   },

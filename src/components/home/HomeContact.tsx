@@ -75,14 +75,14 @@ export default function HomeContact() {
                 </div>
               </div>
 
-              {/* Support Email - Updated to approvals@acceleratefinancial.com.au as in Change 9 / Image 6 */}
+              {/* Email - Updated to approvals@acceleratefinancial.com.au */}
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full border border-cyan-400 bg-cyan-50 flex items-center justify-center text-[#00c5d6] shrink-0 mt-0.5">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
                   <h4 className="text-xs font-bold uppercase tracking-wider text-slate-800">
-                    Support Email
+                    Email
                   </h4>
                   <a
                     href="mailto:approvals@acceleratefinancial.com.au"

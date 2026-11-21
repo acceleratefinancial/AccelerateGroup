@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const whyChoosePillars = [
   {
     title: "100% South Australian Owned & Operated",
-    desc: "We live and work in Adelaide. We understand the local property market, South Australian industries, and what matters most to our clients.",
+    desc: "We live and work in Adelaide. We understand the local market, South Australian industries, and what matters most to our clients.",
     icon: MapPin,
   },
   {
@@ -100,8 +100,11 @@ export default function AboutUsPage() {
               </p>
               <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed text-left sm:text-center">
                 <p>
-                  For two decades, we have operated on a simple promise: to deliver fast, friendly,
-                  and hassle-free finance solutions tailored to everyday South Australians and local
+                  For two decades, we have operated on a simple promise: to deliver{" "}
+                  <strong className="font-bold italic">
+                    fast, friendly, and hassle-free finance solutions
+                  </strong>{" "}
+                  tailored to everyday South Australians and local
                   businesses. With over 100 years of combined industry experience across our team and
                   access to a panel of more than 40 leading lenders, we take the stress out of
                   borrowing by doing all the legwork for you—from comparing interest rates to
@@ -215,7 +218,7 @@ export default function AboutUsPage() {
               Ready to Discuss Your Financing Needs?
             </h3>
             <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto mb-8">
-              Reach out to our team of dedicated Adelaide finance brokers today for personalized loan advice.
+              Reach out to our team of dedicated Adelaide finance brokers today for personalised loan advice.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
