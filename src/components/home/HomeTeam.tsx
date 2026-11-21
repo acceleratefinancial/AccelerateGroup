@@ -101,7 +101,7 @@ export default function HomeTeam() {
             {leadershipTeam.map((member) => (
               <div
                 key={member.displayName}
-                className="group relative rounded-2xl overflow-hidden bg-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col"
+                className="group relative rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full"
               >
                 {/* Photo */}
                 <div className="relative aspect-[3/4] w-full overflow-hidden bg-slate-200">
@@ -115,11 +115,11 @@ export default function HomeTeam() {
                 </div>
 
                 {/* Info Card at Bottom */}
-                <div className="p-4 sm:p-5 bg-white flex flex-col justify-center border-t border-gray-100">
+                <div className="p-3.5 sm:p-4 bg-white flex-1 flex flex-col justify-center border-t border-gray-100 min-h-[68px] sm:min-h-[76px]">
                   <h3 className="font-bold text-base sm:text-lg text-[#06122d] leading-snug group-hover:text-[#00c5d6] transition-colors">
                     {member.displayName}
                   </h3>
-                  <p className="text-xs font-bold text-[#00c5d6] uppercase tracking-wider mt-0.5">
+                  <p className="text-[10px] sm:text-[11px] xl:text-xs font-bold text-[#00c5d6] uppercase tracking-wide mt-0.5 whitespace-nowrap">
                     {member.role}
                   </p>
                 </div>
@@ -140,7 +140,7 @@ export default function HomeTeam() {
             {brokersTeam.map((member, i) => (
               <div
                 key={`${member.displayName}-${i}`}
-                className="group relative rounded-2xl overflow-hidden bg-slate-50 shadow-xs hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col"
+                className="group relative rounded-2xl overflow-hidden bg-white shadow-xs hover:shadow-lg transition-all duration-300 border border-gray-100 flex flex-col h-full"
               >
                 {/* Photo */}
                 <div className="relative aspect-[3/4] w-full overflow-hidden bg-slate-100 flex items-center justify-center">
@@ -158,11 +158,11 @@ export default function HomeTeam() {
                 </div>
 
                 {/* Info Card at Bottom */}
-                <div className="p-4 sm:p-5 bg-white flex flex-col justify-center border-t border-gray-100">
+                <div className="p-3.5 sm:p-4 bg-white flex-1 flex flex-col justify-center border-t border-gray-100 min-h-[68px] sm:min-h-[76px]">
                   <h4 className="font-bold text-base sm:text-lg text-[#06122d] leading-snug truncate group-hover:text-[#00c5d6] transition-colors">
                     {member.displayName}
                   </h4>
-                  <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mt-0.5">
+                  <p className="text-[10px] sm:text-[11px] xl:text-xs font-bold text-slate-500 uppercase tracking-wide mt-0.5">
                     {member.role}
                   </p>
                 </div>
