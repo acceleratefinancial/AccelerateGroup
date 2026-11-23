@@ -26,28 +26,53 @@ const tabContent = [
 const happySnaps = [
   {
     src: "/images/home/happy-snap-1.jpg",
-    alt: "Happy clients celebrating new vehicle delivery with Accelerate Financial",
-    caption: "Celebrating another dream vehicle delivery with the Accelerate team! 🚗🎉",
+    alt: "Excited client celebrating new vehicle delivery at Accelerate Financial",
+    caption: "Pure excitement! Celebrating another dream vehicle delivery. 🚗🎉",
   },
   {
     src: "/images/home/happy-snap-2.jpg",
-    alt: "Accelerate team with Big Heart Adventures bus delivery",
-    caption: "Proud community partnership with Big Heart Adventures! 🤝",
+    alt: "Smiling family with their two young daughters receiving their new vehicle",
+    caption: "Family-ready! Congratulations on the new family SUV. 👨‍👩‍👧‍👧✨",
   },
   {
     src: "/images/home/happy-snap-3.jpg",
-    alt: "Client vehicle handover with red ribbon and Accelerate logo",
-    caption: "Keys handed over! Tailored finance and zero dealership stress. 🔑✨",
+    alt: "Dave Manou with client celebrating new commercial 4x4 ute handover",
+    caption: "Work-ready! Dave handing over keys to a new commercial ute. 🛻🔑",
   },
   {
     src: "/images/home/happy-snap-4.jpg",
-    alt: "Couple smiling with their new black Kia delivery from Accelerate Car Buying",
-    caption: "New Kia handover day – congratulations to our wonderful clients! 🚙",
+    alt: "Delighted client with new luxury SUV and gold delivery bow",
+    caption: "Stunning new vehicle delivery with tailored finance structuring. 🌟",
   },
   {
     src: "/images/home/happy-snap-5.jpg",
-    alt: "Delighted client posing with her new matte SUV and gold bow",
-    caption: "Stunning new vehicle delivery with custom finance structuring! 🌟",
+    alt: "Proud client celebrating new red vehicle delivery in showroom",
+    caption: "Keys handed over! Smooth approval and zero dealership stress. 🔑🚘",
+  },
+  {
+    src: "/images/home/happy-snap-6.jpg",
+    alt: "Young client and Andrew Hoppy Hopkins celebrating new 4WD handover",
+    caption: "Hoppy congratulating another happy client on his new 4WD! 👍🚙",
+  },
+  {
+    src: "/images/home/happy-snap-7.jpg",
+    alt: "Couple and broker with new white SUV in modern delivery studio",
+    caption: "Showroom perfection – tailored finance structured for the road ahead. ✨",
+  },
+  {
+    src: "/images/home/happy-snap-8.jpg",
+    alt: "Clients with new blue vehicle delivery outside Accelerate Financial office",
+    caption: "Handover day right outside our Beverley office! 🏢🚙",
+  },
+  {
+    src: "/images/home/happy-snap-9.jpg",
+    alt: "Client celebrating with arms raised next to new metallic red vehicle",
+    caption: "All smiles! That winning feeling when new car keys are in hand. 🙌🚗",
+  },
+  {
+    src: "/images/home/happy-snap-10.jpg",
+    alt: "Smiling couple with Andrew Hoppy Hopkins next to new white vehicle",
+    caption: "New car day! Another seamless vehicle buying journey complete. 🤝🎉",
   },
 ];
 
