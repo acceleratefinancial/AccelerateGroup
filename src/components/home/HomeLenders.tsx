@@ -3,8 +3,6 @@ import Image from "next/image";
 
 // Full-color original lender logo assets from the client's V3 design document & repository
 const lenderList = [
-  { name: "NAB", src: "/images/home/lender-nab.png", width: 120, height: 42 },
-  { name: "Macquarie", src: "/images/home/lender-macquarie.png", width: 120, height: 40 },
   { name: "BOQ Finance", src: "/images/home/lender-boq.png", width: 120, height: 38 },
   { name: "Liberty", src: "/images/home/lender-liberty.png", width: 120, height: 38 },
   { name: "Latitude", src: "/images/home/lender-latitude.png", width: 120, height: 38 },
@@ -14,7 +12,6 @@ const lenderList = [
   { name: "ANZ", src: "/images/home/lender-anz.png", width: 115, height: 40 },
   { name: "Westpac", src: "/images/Westpac-Logo-CMYK.JPG", width: 120, height: 32 },
   { name: "Pepper Money", src: "/images/Pepper-Money-logo.JPG", width: 110, height: 42 },
-  { name: "Suncorp", src: "/images/Suncorp_Hor_CMYK.jpg", width: 120, height: 35 },
 ];
 
 export default function HomeLenders() {

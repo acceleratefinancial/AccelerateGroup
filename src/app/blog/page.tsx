@@ -53,11 +53,11 @@ export default function BlogIndexPage() {
                 </span>
 
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight mb-4">
-                  Run the Numbers with Our Repayments Calculator or Speak to a Broker
+                  Run the Numbers with Our Repayments Calculator and Speak to a Broker
                 </h2>
 
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
-                  Whether you are planning a vehicle upgrade, exploring a novated lease, or looking to lower your mortgage interest rates, our Adelaide team compares 40+ Australian lenders to structure the ideal loan for your situation.
+                  Whether you are planning a vehicle upgrade, exploring a novated lease, our Adelaide team compares 40+ Australian lenders to structure the ideal loan for your situation.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4">

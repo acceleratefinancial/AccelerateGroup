@@ -6,7 +6,7 @@ import SectionEyebrow from "@/components/shared/SectionEyebrow";
 
 const reviews = [
   {
-    name: "Jon Davis",
+    name: "Jon",
     date: "2 weeks ago",
     avatarBg: "bg-blue-600",
     initial: "J",
@@ -20,28 +20,28 @@ const reviews = [
     text: "We had such a great experience with Accelerate Financial Solutions while organising finance for our new-to-us car. From start to finish, the team were proactive, incredibly helpful and efficient throughout the entire process. Communication was fantastic, they kept everything moving along and made what can sometimes be a daunting process feel easy and stress-free. Special mention to Dan!",
   },
   {
-    name: "Mikaylah Myles",
+    name: "Mikaylah",
     date: "2 weeks ago",
     avatarBg: "bg-emerald-600",
     initial: "M",
     text: "Scott Allanson has been amazing from the beginning through to the end. I was recommended Scott by a good family friend and I would recommend Scott to anyone looking for a stress free, quick and easy loan.",
   },
   {
-    name: "Steve Spotter",
+    name: "Steve",
     date: "3 weeks ago",
     avatarBg: "bg-amber-600",
     initial: "S",
     text: "Big thanks to Dan for all his help in getting me the finance for my new bike. Dan's professional help made it easy to understand and he helped me through every process. Two thumbs up, I would highly recommend Dan to help you for your financial solutions.",
   },
   {
-    name: "Scott Stone",
+    name: "Scott",
     date: "1 month ago",
     avatarBg: "bg-indigo-600",
     initial: "S",
     text: "Absolute pleasure to work with Dan. Made it seamless and even after care was great. Highly recommend Accelerate Financial to anyone seeking competitive vehicle and personal loans!",
   },
   {
-    name: "Antonia Degioia",
+    name: "Antonia",
     date: "1 month ago",
     avatarBg: "bg-rose-600",
     initial: "A",
@@ -55,7 +55,7 @@ const reviews = [
     text: "Dan was very helpful in helping sort finances for a new car. Very quick and thorough, highly recommend Accelerate Financial Solutions.",
   },
   {
-    name: "Corey Smith",
+    name: "Corey",
     date: "2 months ago",
     avatarBg: "bg-cyan-600",
     initial: "C",

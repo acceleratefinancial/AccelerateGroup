@@ -42,7 +42,7 @@ export default function ClientReferralPage() {
         <PageHero
           title="Easy Referral"
           eyebrow="Our Way Of Saying Thanks"
-          description="At Accelerate Financial, word of mouth is our greatest compliment. Introduce friends, family, or business associates to receive dedicated lending advisory and referral rewards."
+          description="At Accelerate Financial, word of mouth is our greatest compliment. Introduce friends, family, or business associates and receive $100 gift card of your choice."
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Easy Referral" },
@@ -53,7 +53,7 @@ export default function ClientReferralPage() {
         <section className="py-20 lg:py-24 bg-white">
           <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-16">
-              <SectionEyebrow text="Simple Workflow" />
+              <SectionEyebrow text="Easy Introduction" />
               <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-extrabold text-[#06122d] leading-tight mb-4">
                 How Does It Work?
               </h2>

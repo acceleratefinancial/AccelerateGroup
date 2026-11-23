@@ -23,7 +23,7 @@ export default function ApplyNowPage() {
         <PageHero
           title="Apply Online Now"
           eyebrow="Secure Portal"
-          description="Complete your digital application to begin structuring your loan. Our team compares 40+ lenders across Australia to deliver competitive finance solutions."
+          description="Call us on 0883481000 or complete your digital application now. Our team compares 40+ lenders across Australia to deliver competitive finance solutions."
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Apply Now" },

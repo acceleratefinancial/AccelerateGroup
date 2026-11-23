@@ -170,7 +170,7 @@ export default function CalculatorWidget() {
             Interactive Finance Calculator
           </span>
           <span className="text-xs sm:text-[13px] font-semibold text-[#0082ca]">
-            Fast, Flexible &amp; Transparent
+            Fast and Flexible
           </span>
         </div>
       </div>
@@ -867,7 +867,7 @@ export default function CalculatorWidget() {
           <strong className="text-gray-700">DISCLAIMER:</strong> This loan calculator is provided
           for general illustrative purposes only. It is not intended as a loan offer, official
           quote, or guarantee of finance approval. The estimated repayments calculated do not
-          include potential lender fees, account keeping charges, or government duties that may
+          include potential lender and broker fees, account keeping charges, or government duties that may
           apply. The actual interest rate and repayment amounts offered will depend on individual
           credit assessment, financial criteria, and lender approval.
         </p>

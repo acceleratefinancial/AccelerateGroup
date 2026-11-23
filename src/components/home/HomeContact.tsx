@@ -95,10 +95,10 @@ export default function HomeContact() {
             </div>
           </div>
 
-          {/* Right Column: Leave Us A Message Form */}
+          {/* Right Column: Send Us A Message Form */}
           <div className="lg:col-span-6 flex flex-col justify-center">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-[#06122d] mb-6">
-              Leave Us A Message
+              Send Us A Message
             </h3>
 
             {submitted ? (
@@ -162,11 +162,12 @@ export default function HomeContact() {
                     <option value="" disabled>
                       Select Subject
                     </option>
-                    <option value="Home Loan">Home Loan</option>
-                    <option value="Car & Equipment Loan">Car &amp; Equipment Loan</option>
-                    <option value="Business Finance">Business Finance</option>
-                    <option value="Salary Packaging">Salary Packaging</option>
-                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Personal Loan">Personal Loan</option>
+                    <option value="Business Loan">Business Loan</option>
+                    <option value="Salary packaging">Salary packaging</option>
+                    <option value="Car buying">Car buying</option>
+                    <option value="Home loans">Home loans</option>
+                    <option value="General enquiry">General enquiry</option>
                   </select>
                 </div>
 

@@ -14,8 +14,7 @@ export default function HomeServices() {
           <SectionEyebrow text="What We Offer" />
 
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#06122d] leading-tight">
-            We Provide Best Services <br />
-            For Your Loan
+            Finance Solutions Tailored To You
           </h2>
           <p className="text-slate-500 text-sm sm:text-base mt-3">
             Click any service card to view loan features, benefits, and tailored financing options.

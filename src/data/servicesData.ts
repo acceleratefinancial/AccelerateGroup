@@ -12,12 +12,13 @@ export interface ServiceCardData {
 export const servicesRow1: ServiceCardData[] = [
   {
     id: "personal",
-    title: "Personal Loans",
-    frontTitle: "Personal Loans",
+    title: "Personal Lending",
+    frontTitle: "Personal Lending",
     frontDesc:
       "Flexible personal lending solutions structured to support your life milestones with tailored rates.",
     backEyebrow: "TAILORED FINANCE FOR YOUR PERSONAL GOALS",
     features: [
+      "Car, caravan, boat, motorbike, holiday, home renovation",
       "Competitive fixed and variable rate options",
       "Debt consolidation to streamline monthly payments",
       "Transparent terms with no hidden fees",
@@ -28,14 +29,14 @@ export const servicesRow1: ServiceCardData[] = [
   },
   {
     id: "business",
-    title: "Commercial & Business Lending",
+    title: "Commercial and Business Loans",
     frontTitle: "Business Loans",
     frontDesc:
       "Commercial loans and equipment finance to fund growth, working capital, and business expansion.",
     backEyebrow: "FUNDING TO GROW AND SCALE YOUR OPERATIONS",
     features: [
-      "Working capital and cashflow support",
-      "Plant, machinery, and commercial equipment finance",
+      "Cars, Trucks, machinery, plant and equipment finance",
+      "Working capital and cashflow funding",
       "Commercial property purchase and development loans",
       "Custom structuring aligned with your business cash cycle",
     ],
@@ -50,8 +51,8 @@ export const servicesRow2: ServiceCardData[] = [
     title: "Salary Packaging & Novated Leases",
     frontTitle: "Salary Packaging",
     frontDesc:
-      "Maximise your take-home pay and tax efficiencies with compliant novated leasing and fleet discounts.",
-    backEyebrow: "TAX-EFFECTIVE VEHICLE AND ASSET PACKAGING",
+      "Maximise your take home pay and tax effectiveness with a novated lease",
+    backEyebrow: "TAX-EFFECTIVE VEHICLE PACKAGING",
     features: [
       "Novated leasing options for new, used, and electric vehicles",
       "Pre-tax salary deductions to maximise net income",
@@ -69,7 +70,7 @@ export const servicesRow2: ServiceCardData[] = [
       "Expert vehicle procurement and tailored vehicle finance without dealership hassle.",
     backEyebrow: "EXPERT CAR PROCUREMENT AND FINANCE",
     features: [
-      "Wholesale fleet pricing through our national dealer network",
+      "Preferential pricing through our national dealer network",
       "Complete negotiation handled on your behalf",
       "Flexible consumer and commercial vehicle loan options",
       "Trade-in assistance and end to end service",

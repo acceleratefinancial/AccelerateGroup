@@ -19,17 +19,17 @@ const leadershipTeam = [
     objectPosition: "object-center",
   },
   {
-    name: "Rhianna",
-    displayName: "Rhianna",
-    role: "Business Development Manager",
-    image: "/images/home/team-rhianna-new.png",
-    objectPosition: "object-center",
-  },
-  {
     name: "Bianca",
     displayName: "Bianca",
     role: "Team Leader",
     image: "/images/home/team-bianca-new.png",
+    objectPosition: "object-center",
+  },
+  {
+    name: "Rhianna",
+    displayName: "Rhianna",
+    role: "Business Development Manager",
+    image: "/images/home/team-rhianna-new.png",
     objectPosition: "object-center",
   },
 ];
@@ -51,6 +51,13 @@ const brokersTeam = [
     isPlaceholder: false,
   },
   {
+    name: "Ronnie",
+    displayName: "Ronnie",
+    role: "Broker",
+    image: "/images/home/team-ronnie.png",
+    isPlaceholder: false,
+  },
+  {
     name: "Dan",
     displayName: "Dan",
     role: "Broker",
@@ -62,13 +69,6 @@ const brokersTeam = [
     displayName: "Mike",
     role: "Broker",
     image: "/images/home/team-mike.png",
-    isPlaceholder: false,
-  },
-  {
-    name: "Ronnie",
-    displayName: "Ronnie",
-    role: "Broker",
-    image: "/images/home/team-ronnie.png",
     isPlaceholder: false,
   },
 ];

@@ -19,9 +19,10 @@ export const metadata: Metadata = {
 const serviceDetails = [
   {
     id: "personal-details",
-    title: "Personal Loans",
+    title: "Personal Lending",
     tagline: "Tailored finance for your personal goals",
     points: [
+      "Car, caravan, boat, motorbike, holiday, home renovation",
       "Competitive fixed and variable rate options",
       "Debt consolidation to streamline monthly payments",
       "Transparent terms with no hidden fees",
@@ -31,11 +32,11 @@ const serviceDetails = [
   },
   {
     id: "business-details",
-    title: "Commercial & Business Lending",
+    title: "Commercial and Business Loans",
     tagline: "Funding to grow and scale your operations",
     points: [
-      "Working capital and cashflow support",
-      "Plant, machinery, and commercial equipment finance",
+      "Cars, Trucks, machinery, plant and equipment finance",
+      "Working capital and cashflow funding",
       "Commercial property purchase and development loans",
       "Custom structuring aligned with your business cash cycle",
     ],
@@ -44,7 +45,7 @@ const serviceDetails = [
   {
     id: "salary-details",
     title: "Salary Packaging & Novated Leases",
-    tagline: "Tax-effective vehicle and asset packaging",
+    tagline: "Tax-effective vehicle packaging",
     points: [
       "Novated leasing options for new, used, and electric vehicles",
       "Pre-tax salary deductions to maximise net income",
@@ -58,7 +59,7 @@ const serviceDetails = [
     title: "Car Buying Solutions",
     tagline: "Expert car procurement and finance",
     points: [
-      "Wholesale fleet pricing through our national dealer network",
+      "Preferential pricing through our national dealer network",
       "Complete negotiation handled on your behalf",
       "Flexible consumer and commercial vehicle loan options",
       "Trade-in assistance and end to end service",
@@ -108,7 +109,7 @@ export default function ServicesPage() {
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                 With hundreds of loan products on the market, finding the right one shouldn&apos;t
                 feel overwhelming. At Accelerate Financial Solutions, our Adelaide-based brokers
-                compare options across more than 40 banks and specialist lenders to secure
+                compare options across more than 40 specialist lenders to secure
                 competitive rates and flexible terms tailored to your personal or commercial goals.
               </p>
               <p className="text-slate-400 text-xs sm:text-sm mt-3 font-medium">
@@ -247,7 +248,7 @@ export default function ServicesPage() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href="/apply-now"
+                href="/#contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#06122d] hover:bg-[#071d49] text-white text-sm font-bold uppercase tracking-wider px-8 py-3.5 rounded-md transition-all shadow-sm active:scale-95"
               >
                 <span>Talk to a Broker</span>

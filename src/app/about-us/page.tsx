@@ -100,7 +100,7 @@ export default function AboutUsPage() {
               </p>
               <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed text-left sm:text-center">
                 <p>
-                  For two decades, we have operated on a simple promise: to deliver{" "}
+                  For over two decades, we have operated on a simple promise: to deliver{" "}
                   <strong className="font-bold italic">
                     fast, friendly, and hassle-free finance solutions
                   </strong>{" "}
@@ -111,9 +111,7 @@ export default function AboutUsPage() {
                   managing paperwork right through to settlement.
                 </p>
                 <p className="font-medium text-[#06122d]">
-                  Whether you are buying your first home in the suburbs, upgrading the family car, or
-                  expanding a local business, you won&apos;t find a friendlier or more dedicated team
-                  to help you reach your financial goals faster.
+                  Whether you are buying a new car, business equipment, or new property, you won&apos;t find a friendlier or more dedicated team to help you reach your financial goals faster.
                 </p>
               </div>
             </div>
