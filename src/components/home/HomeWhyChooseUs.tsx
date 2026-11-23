@@ -74,6 +74,46 @@ const happySnaps = [
     alt: "Smiling couple with Andrew Hoppy Hopkins next to new white vehicle",
     caption: "New car day! Another seamless vehicle buying journey complete. 🤝🎉",
   },
+  {
+    src: "/images/home/happy-snap-11.jpg",
+    alt: "Delighted couple holding car keys next to new vehicle in showroom",
+    caption: "Keys in hand! Stress-free financing and smooth handover day. 🔑😊",
+  },
+  {
+    src: "/images/home/happy-snap-12.jpg",
+    alt: "Client smiling with Andrew Hoppy Hopkins in front of Accelerate office",
+    caption: "Another happy driver hitting the road with Accelerate Financial! 🚗☀️",
+  },
+  {
+    src: "/images/home/happy-snap-13.jpg",
+    alt: "Family celebrating new vehicle delivery with Andrew Hoppy Hopkins",
+    caption: "A proud family moment! Welcoming home their new vehicle. 👨‍👩‍👧‍👦🚙",
+  },
+  {
+    src: "/images/home/happy-snap-14.jpg",
+    alt: "Andrew Hoppy Hopkins celebrating with clients and community partners",
+    caption: "Proud community connections and long-term client relationships! 🤝🎉",
+  },
+  {
+    src: "/images/home/happy-snap-15.jpg",
+    alt: "Couple standing proudly next to their new vehicle on delivery day",
+    caption: "Ready for the road! Tailored loan structuring delivered on time. 🚘✨",
+  },
+  {
+    src: "/images/home/happy-snap-16.jpg",
+    alt: "Couple with brand new Isuzu ute and red bow in delivery bay",
+    caption: "Brand new ute delivery! Built for work, play, and adventure. 🛻🔥",
+  },
+  {
+    src: "/images/home/happy-snap-17.jpg",
+    alt: "Festive celebration and vehicle delivery at Accelerate Financial",
+    caption: "Spreading holiday cheer and delivering smiles all year round! 🎅🎄",
+  },
+  {
+    src: "/images/home/happy-snap-18.jpg",
+    alt: "Young couple celebrating new vehicle delivery with Andrew Hoppy Hopkins",
+    caption: "Thrilled clients celebrating their new vehicle delivery with Hoppy! 🥳🚗",
+  },
 ];
 
 export default function HomeWhyChooseUs() {
@@ -211,17 +251,17 @@ export default function HomeWhyChooseUs() {
             </div>
 
             {/* Slider Navigation Arrows & Dot Indicators */}
-            <div className="flex items-center justify-between w-full max-w-[460px] mt-6 px-2">
+            <div className="flex items-center justify-between w-full max-w-[460px] mt-6 px-2 gap-3">
               {/* Dots */}
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center flex-wrap gap-1 sm:gap-1.5 max-w-[280px] sm:max-w-[340px]">
                 {happySnaps.map((_, i) => (
                   <button
                     key={i}
                     onClick={() => setCurrentSnapIndex(i)}
                     className={`h-2 rounded-full transition-all cursor-pointer ${
                       i === currentSnapIndex
-                        ? "w-6 bg-[#00c5d6]"
-                        : "w-2 bg-slate-600 hover:bg-slate-500"
+                        ? "w-5 sm:w-6 bg-[#00c5d6]"
+                        : "w-1.5 sm:w-2 bg-slate-600 hover:bg-slate-500"
                     }`}
                     aria-label={`Go to slide ${i + 1}`}
                   />
