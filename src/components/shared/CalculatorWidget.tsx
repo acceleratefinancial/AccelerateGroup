@@ -406,7 +406,7 @@ export default function CalculatorWidget() {
               <button
                 type="button"
                 onClick={handleOpenQuote}
-                className="w-full bg-[#0082CA] hover:bg-[#00c5d6] text-white font-extrabold text-sm sm:text-base uppercase tracking-wider py-4 px-6 rounded-xl shadow-lg hover:shadow-cyan-500/30 flex items-center justify-center gap-3 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+                className="w-full bg-[#00c5d6] hover:bg-[#00b0c0] text-white font-extrabold text-sm sm:text-base uppercase tracking-wider py-4 px-6 rounded-xl shadow-lg hover:shadow-cyan-500/30 flex items-center justify-center gap-3 transition-all duration-200 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
               >
                 <span>Get a Free Quote</span>
                 <FileText className="w-5 h-5" />
@@ -778,7 +778,7 @@ export default function CalculatorWidget() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full sm:w-auto min-w-[220px] bg-[#0082CA] hover:bg-[#00205B] disabled:bg-slate-400 text-white font-extrabold text-sm sm:text-base uppercase tracking-wider py-3.5 px-8 rounded-xl shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2"
+                className="w-full sm:w-auto min-w-[220px] bg-[#00c5d6] hover:bg-[#00b0c0] disabled:bg-slate-400 text-white font-extrabold text-sm sm:text-base uppercase tracking-wider py-3.5 px-8 rounded-xl shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   <span>Processing...</span>

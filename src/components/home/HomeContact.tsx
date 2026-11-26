@@ -187,7 +187,7 @@ export default function HomeContact() {
                 <div>
                   <button
                     type="submit"
-                    className="px-7 py-3 rounded-md bg-[#071533] hover:bg-[#00c5d6] text-white text-xs font-bold uppercase tracking-wider transition-all shadow-sm active:scale-95 cursor-pointer"
+                    className="px-7 py-3 rounded-md bg-[#00c5d6] hover:bg-[#00b0c0] text-white text-xs font-bold uppercase tracking-wider transition-all shadow-sm active:scale-95 cursor-pointer"
                   >
                     Send Message
                   </button>

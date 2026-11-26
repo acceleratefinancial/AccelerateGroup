@@ -226,23 +226,19 @@ export default function HomeFooter() {
           {/* Copyright Text & Links */}
           <div className="text-xs sm:text-[13px] text-slate-400 font-normal">
             Copyright Accelerate Group {currentYear} |{" "}
-            <a
-              href="https://acceleratefinancial.com.au/privacy-policies"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/privacy-policy"
               className="hover:text-[#00c5d6] transition-colors"
             >
               Privacy Policy
-            </a>{" "}
+            </Link>{" "}
             |{" "}
-            <a
-              href="https://acceleratefinancial.com.au/compliments-concerns"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/compliments-concerns"
               className="hover:text-[#00c5d6] transition-colors"
             >
               Compliments &amp; Concerns
-            </a>{" "}
+            </Link>{" "}
             |{" "}
             <Link
               href="/forms"
