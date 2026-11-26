@@ -27,92 +27,92 @@ const happySnaps = [
   {
     src: "/images/home/happy-snap-1.jpg",
     alt: "Excited client celebrating new vehicle delivery at Accelerate Financial",
-    caption: "Pure excitement! Celebrating another dream vehicle delivery. 🚗🎉",
+    caption: "Pure excitement!",
   },
   {
     src: "/images/home/happy-snap-2.jpg",
     alt: "Smiling family with their two young daughters receiving their new vehicle",
-    caption: "Family-ready! Congratulations on the new family SUV. 👨‍👩‍👧‍👧✨",
+    caption: "Family-ready!",
   },
   {
     src: "/images/home/happy-snap-3.jpg",
     alt: "Dave Manou with client celebrating new commercial 4x4 ute handover",
-    caption: "Work-ready! Dave handing over keys to a new commercial ute. 🛻🔑",
+    caption: "Work-ready!",
   },
   {
     src: "/images/home/happy-snap-4.jpg",
     alt: "Delighted client with new luxury SUV and gold delivery bow",
-    caption: "Stunning new vehicle delivery with tailored finance structuring. 🌟",
+    caption: "Stunning new vehicle delivery!",
   },
   {
     src: "/images/home/happy-snap-5.jpg",
     alt: "Proud client celebrating new red vehicle delivery in showroom",
-    caption: "Keys handed over! Smooth approval and zero dealership stress. 🔑🚘",
+    caption: "Keys handed over!",
   },
   {
     src: "/images/home/happy-snap-6.jpg",
     alt: "Young client and Andrew Hoppy Hopkins celebrating new 4WD handover",
-    caption: "Hoppy congratulating another happy client on his new 4WD! 👍🚙",
+    caption: "New 4WD handover!",
   },
   {
     src: "/images/home/happy-snap-7.jpg",
     alt: "Couple and broker with new white SUV in modern delivery studio",
-    caption: "Showroom perfection – tailored finance structured for the road ahead. ✨",
+    caption: "Showroom perfection!",
   },
   {
     src: "/images/home/happy-snap-8.jpg",
     alt: "Clients with new blue vehicle delivery outside Accelerate Financial office",
-    caption: "Handover day right outside our Beverley office! 🏢🚙",
+    caption: "Handover day at our office!",
   },
   {
     src: "/images/home/happy-snap-9.jpg",
     alt: "Client celebrating with arms raised next to new metallic red vehicle",
-    caption: "All smiles! That winning feeling when new car keys are in hand. 🙌🚗",
+    caption: "All smiles!",
   },
   {
     src: "/images/home/happy-snap-10.jpg",
     alt: "Smiling couple with Andrew Hoppy Hopkins next to new white vehicle",
-    caption: "New car day! Another seamless vehicle buying journey complete. 🤝🎉",
+    caption: "New car day!",
   },
   {
     src: "/images/home/happy-snap-11.jpg",
     alt: "Delighted couple holding car keys next to new vehicle in showroom",
-    caption: "Keys in hand! Stress-free financing and smooth handover day. 🔑😊",
+    caption: "Keys in hand!",
   },
   {
     src: "/images/home/happy-snap-12.jpg",
     alt: "Client smiling with Andrew Hoppy Hopkins in front of Accelerate office",
-    caption: "Another happy driver hitting the road with Accelerate Financial! 🚗☀️",
+    caption: "Another happy driver!",
   },
   {
     src: "/images/home/happy-snap-13.jpg",
     alt: "Family celebrating new vehicle delivery with Andrew Hoppy Hopkins",
-    caption: "A proud family moment! Welcoming home their new vehicle. 👨‍👩‍👧‍👦🚙",
+    caption: "A proud family moment!",
   },
   {
     src: "/images/home/happy-snap-14.jpg",
     alt: "Andrew Hoppy Hopkins celebrating with clients and community partners",
-    caption: "Proud community connections and long-term client relationships! 🤝🎉",
+    caption: "Proud community connections!",
   },
   {
     src: "/images/home/happy-snap-15.jpg",
     alt: "Couple standing proudly next to their new vehicle on delivery day",
-    caption: "Ready for the road! Tailored loan structuring delivered on time. 🚘✨",
+    caption: "Ready for the road!",
   },
   {
     src: "/images/home/happy-snap-16.jpg",
     alt: "Couple with brand new Isuzu ute and red bow in delivery bay",
-    caption: "Brand new ute delivery! Built for work, play, and adventure. 🛻🔥",
+    caption: "Brand new ute delivery!",
   },
   {
     src: "/images/home/happy-snap-17.jpg",
     alt: "Festive celebration and vehicle delivery at Accelerate Financial",
-    caption: "Spreading holiday cheer and delivering smiles all year round! 🎅🎄",
+    caption: "Spreading holiday cheer!",
   },
   {
     src: "/images/home/happy-snap-18.jpg",
     alt: "Young couple celebrating new vehicle delivery with Andrew Hoppy Hopkins",
-    caption: "Thrilled clients celebrating their new vehicle delivery with Hoppy! 🥳🚗",
+    caption: "Thrilled clients celebrating!",
   },
 ];
 
@@ -241,7 +241,7 @@ export default function HomeWhyChooseUs() {
                     </div>
 
                     <div className="h-[18%] sm:h-[16%] flex items-center px-2 pt-1 text-slate-800">
-                      <p className="text-xs sm:text-[13px] font-bold truncate text-[#071533]">
+                      <p className="text-xs sm:text-[13px] font-bold line-clamp-2 leading-tight text-[#071533]">
                         {snap.caption}
                       </p>
                     </div>

@@ -85,7 +85,7 @@ export default function HomeTeam() {
             Our Awesome Team
           </h2>
           <p className="text-slate-500 text-sm sm:text-base mt-3">
-            Experienced Adelaide finance brokers dedicated to finding you the right loan structuring.
+            Experienced Adelaide finance brokers dedicated to finding you the right loan and structure.
           </p>
         </div>
 
@@ -131,7 +131,7 @@ export default function HomeTeam() {
         {/* Row 2: Brokers (5 Members on Desktop) */}
         <div>
           <div className="text-center mb-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#00c5d6]">
               Brokers
             </span>
           </div>
@@ -162,7 +162,7 @@ export default function HomeTeam() {
                   <h4 className="font-bold text-base sm:text-lg text-[#06122d] leading-snug truncate group-hover:text-[#00c5d6] transition-colors">
                     {member.displayName}
                   </h4>
-                  <p className="text-[10px] sm:text-[11px] xl:text-xs font-bold text-slate-500 uppercase tracking-wide mt-0.5">
+                  <p className="text-[10px] sm:text-[11px] xl:text-xs font-bold text-[#00c5d6] uppercase tracking-wide mt-0.5 whitespace-nowrap">
                     {member.role}
                   </p>
                 </div>

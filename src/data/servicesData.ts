@@ -35,7 +35,7 @@ export const servicesRow1: ServiceCardData[] = [
       "Commercial loans and equipment finance to fund growth, working capital, and business expansion.",
     backEyebrow: "FUNDING TO GROW AND SCALE YOUR OPERATIONS",
     features: [
-      "Cars, Trucks, machinery, plant and equipment finance",
+      "Cars, trucks, machinery, plant and equipment finance",
       "Working capital and cashflow funding",
       "Commercial property purchase and development loans",
       "Custom structuring aligned with your business cash cycle",
@@ -67,7 +67,7 @@ export const servicesRow2: ServiceCardData[] = [
     title: "Car Buying Solutions",
     frontTitle: "Car Buying",
     frontDesc:
-      "Expert vehicle procurement and tailored vehicle finance without dealership hassle.",
+      "Expert vehicle procurement and tailored vehicle finance.",
     backEyebrow: "EXPERT CAR PROCUREMENT AND FINANCE",
     features: [
       "Preferential pricing through our national dealer network",
@@ -83,7 +83,7 @@ export const servicesRow2: ServiceCardData[] = [
     title: "Home & Property Loans",
     frontTitle: "Home Loans",
     frontDesc:
-      "Residential mortgages, refinancing, and investment property loans tailored to your needs.",
+      "Tailored residential mortgages, refinancing and investment property loans.",
     backEyebrow: "MORTGAGES MADE SIMPLE AND COMPETITIVE",
     features: [
       "First home buyer guidance and grant assistance",

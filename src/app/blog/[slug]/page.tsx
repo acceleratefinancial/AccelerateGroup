@@ -142,27 +142,8 @@ export default async function BlogPostPage({ params }: PageProps) {
               </p>
             )}
 
-            {/* Author info & Share button */}
-            <div className="pt-6 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4 max-w-4xl">
-              <div className="flex items-center gap-3">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#00c5d6] bg-slate-800 shrink-0">
-                  <Image
-                    src={post.author.avatar}
-                    alt={post.author.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <p className="text-sm sm:text-base font-bold text-white">
-                    {post.author.name}
-                  </p>
-                  <p className="text-xs sm:text-sm text-slate-400">
-                    {post.author.role}
-                  </p>
-                </div>
-              </div>
-
+            {/* Action Bar & Share button */}
+            <div className="pt-6 border-t border-slate-800 flex items-center justify-end max-w-4xl">
               <ShareButton title={post.title} />
             </div>
           </div>

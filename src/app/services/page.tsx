@@ -35,7 +35,7 @@ const serviceDetails = [
     title: "Commercial and Business Loans",
     tagline: "Funding to grow and scale your operations",
     points: [
-      "Cars, Trucks, machinery, plant and equipment finance",
+      "Cars, trucks, machinery, plant and equipment finance",
       "Working capital and cashflow funding",
       "Commercial property purchase and development loans",
       "Custom structuring aligned with your business cash cycle",
@@ -135,7 +135,7 @@ export default function ServicesPage() {
         </section>
 
         {/* Extensible Service Details Section (Clean modular section for future client content expansion) */}
-        <section className="py-20 bg-slate-50 border-t border-slate-200/70" id="service-details">
+        <section className="py-20 bg-slate-50 border-t border-slate-200/70 scroll-mt-28 lg:scroll-mt-36" id="service-details">
           <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-extrabold text-[#06122d] mb-4">
@@ -153,7 +153,7 @@ export default function ServicesPage() {
                 <div
                   key={item.id}
                   id={item.id}
-                  className="bg-white rounded-2xl p-7 sm:p-8 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
+                  className="bg-white rounded-2xl p-7 sm:p-8 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between scroll-mt-28 lg:scroll-mt-36"
                 >
                   <div>
                     <h3 className="text-xl sm:text-2xl font-bold text-[#06122d] mb-1">
@@ -192,7 +192,7 @@ export default function ServicesPage() {
                 <div
                   key={item.id}
                   id={item.id}
-                  className="bg-white rounded-2xl p-7 sm:p-8 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between"
+                  className="bg-white rounded-2xl p-7 sm:p-8 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between scroll-mt-28 lg:scroll-mt-36"
                 >
                   <div>
                     <h3 className="text-xl sm:text-2xl font-bold text-[#06122d] mb-1">
@@ -237,7 +237,7 @@ export default function ServicesPage() {
               Ready to Accelerate Your Loan?
             </h3>
             <p className="text-slate-600 text-sm sm:text-base max-w-xl mx-auto mb-8">
-              Submit your inquiry online or speak directly with an accredited finance broker.
+              Submit your enquiry online or speak directly with an accredited finance broker.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link

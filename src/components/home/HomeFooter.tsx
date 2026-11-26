@@ -153,25 +153,23 @@ export default function HomeFooter() {
             </ul>
           </div>
 
-          {/* Column 5: Google Map Preview (col-span-2) */}
-          <div className="lg:col-span-2">
+          {/* Column 5: Google Map Preview (A bit bigger, no text) */}
+          <div className="lg:col-span-4 md:col-span-2 pt-2">
             <a
               href="https://maps.google.com/?q=113B+Ledger+Road+Beverley+South+Australia+5009"
               target="_blank"
               rel="noopener noreferrer"
-              className="block group rounded-xl overflow-hidden border border-slate-700 bg-slate-800/50 shadow-md"
+              aria-label="View office location on Google Maps"
+              className="block group rounded-xl overflow-hidden border border-slate-700/80 bg-slate-800/50 shadow-md max-w-[320px] hover:border-[#00c5d6]/60 transition-all"
             >
-              <div className="relative aspect-[4/3] w-full">
+              <div className="relative aspect-[16/10] w-full min-h-[150px]">
                 <Image
                   src="/images/home/footer-map.png"
                   alt="Accelerate Head Office Map Location"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-[#00c5d6]/10 group-hover:bg-transparent transition-colors" />
-              </div>
-              <div className="p-2 text-center bg-slate-900/90 text-[11px] font-semibold text-slate-300 group-hover:text-[#00c5d6] transition-colors">
-                View on Google Maps
+                <div className="absolute inset-0 bg-[#00c5d6]/5 group-hover:bg-transparent transition-colors" />
               </div>
             </a>
           </div>
@@ -228,15 +226,28 @@ export default function HomeFooter() {
           {/* Copyright Text & Links */}
           <div className="text-xs sm:text-[13px] text-slate-400 font-normal">
             Copyright Accelerate Group {currentYear} |{" "}
-            <Link href="/privacy-policy" className="hover:text-[#00c5d6] transition-colors">
+            <a
+              href="https://acceleratefinancial.com.au/privacy-policies"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#00c5d6] transition-colors"
+            >
               Privacy Policy
-            </Link>{" "}
+            </a>{" "}
             |{" "}
-            <Link href="/compliments-concerns" className="hover:text-[#00c5d6] transition-colors">
+            <a
+              href="https://acceleratefinancial.com.au/compliments-concerns"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#00c5d6] transition-colors"
+            >
               Compliments &amp; Concerns
-            </Link>{" "}
+            </a>{" "}
             |{" "}
-            <Link href="/forms" className="hover:text-[#00c5d6] transition-colors">
+            <Link
+              href="/forms"
+              className="hover:text-[#00c5d6] transition-colors"
+            >
               Forms
             </Link>
           </div>

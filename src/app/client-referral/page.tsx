@@ -23,7 +23,7 @@ const referralSteps = [
   {
     step: "02",
     title: "Expert Broker Review",
-    desc: "Our senior brokers reach out, compare 40+ lenders, and tailor the most competitive financing solution.",
+    desc: "Our senior brokers reach out, compare 40+ lenders, and tailor the most competitive solution.",
   },
   {
     step: "03",
@@ -126,7 +126,7 @@ export default function ClientReferralPage() {
                   Terms &amp; Conditions
                 </h5>
                 <p>
-                  Referral rewards are payable upon unconditional approval and full settlement of eligible settled finance contracts. The referrer must have obtained consent from the referred party prior to submitting their personal contact details. Normal lending criteria, fees, terms, and lender approval conditions apply.
+                  Referral rewards are payable upon full settlement of eligible settled finance contracts. The referrer must have obtained consent from the referred party prior to submitting their personal contact details. Normal lending criteria, fees, terms, and lender approval conditions apply.
                 </p>
               </div>
 

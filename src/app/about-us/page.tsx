@@ -49,10 +49,10 @@ const whyChoosePillars = [
 
 const communityPillars = [
   {
-    title: "Award-Recognised Community Leadership",
-    desc: "Finalist for the Social Impact & Change Maker Award and Best Small Business at the City of Charles Sturt Business Recognition Awards, as well as a finalist for Best Community Engagement Program at the Better Business Awards.",
-    icon: Trophy,
-    badge: "Awards & Recognition",
+    title: "Backing Local Families & Charities",
+    desc: "Through ongoing sponsorships, fundraising initiatives, and local partnerships across the western suburbs and greater Adelaide, our team is committed to helping our community thrive both on and off the field.",
+    icon: Users2,
+    badge: "Community Care",
   },
   {
     title: "Supporting Local Adelaide Sport",
@@ -61,10 +61,10 @@ const communityPillars = [
     badge: "Grassroots Sports",
   },
   {
-    title: "Backing Local Families & Charities",
-    desc: "Through ongoing sponsorships, fundraising initiatives, and local partnerships across the western suburbs and greater Adelaide, our team is committed to helping our community thrive both on and off the field.",
-    icon: Users2,
-    badge: "Community Care",
+    title: "Award-Recognised Community Leadership",
+    desc: "Finalist for the Social Impact & Change Maker Award and Best Small Business at the City of Charles Sturt Business Recognition Awards, as well as a finalist for Best Community Engagement Program at the Better Business Awards.",
+    icon: Trophy,
+    badge: "Awards & Recognition",
   },
 ];
 
@@ -94,9 +94,7 @@ export default function AboutUsPage() {
                 Two Decades of Trusted Local Brokering
               </h2>
               <p className="text-base sm:text-lg text-slate-700 font-medium leading-relaxed mb-6">
-                Founded in 2006 by Managing Director Andrew Hopkins (&ldquo;Hoppy&rdquo;), Accelerate
-                Financial Solutions is a proudly South Australian owned and operated finance
-                brokerage in Adelaide.
+                Founded in 2006, Accelerate Financial Solutions is a proudly South Australian owned and operated finance brokerage in Adelaide.
               </p>
               <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed text-left sm:text-center">
                 <p>

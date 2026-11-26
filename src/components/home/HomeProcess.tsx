@@ -21,7 +21,7 @@ const steps: StepItem[] = [
   {
     step: "step 02",
     title: "Easy Application",
-    desc: "Our team manages all paperwork and negotiations.",
+    desc: "Our team gathers all the necessary information.",
     image: "/images/home/journey_step_2.png",
     offset: true,
   },

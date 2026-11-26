@@ -61,26 +61,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
             </p>
           </div>
 
-          <div className="pt-6 border-t border-slate-100 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="relative w-10 h-10 rounded-full overflow-hidden border border-slate-200 bg-slate-100 shrink-0">
-                <Image
-                  src={post.author.avatar}
-                  alt={post.author.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <p className="text-xs sm:text-sm font-bold text-[#071533]">
-                  {post.author.name}
-                </p>
-                <p className="text-[11px] text-slate-500">
-                  {post.author.role}
-                </p>
-              </div>
-            </div>
-
+          <div className="pt-6 border-t border-slate-100 flex items-center justify-end">
             <Link
               href={`/blog/${post.slug}`}
               className="inline-flex items-center gap-1 text-sm font-bold text-[#0082ca] hover:text-[#00c5d6] transition-colors shrink-0"
@@ -136,21 +117,7 @@ export default function BlogCard({ post, featured = false }: BlogCardProps) {
           </p>
         </div>
 
-        <div className="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
-          <div className="flex items-center gap-2.5">
-            <div className="relative w-8 h-8 rounded-full overflow-hidden border border-slate-200 bg-slate-100 shrink-0">
-              <Image
-                src={post.author.avatar}
-                alt={post.author.name}
-                fill
-                className="object-cover"
-              />
-            </div>
-            <span className="text-xs font-semibold text-[#071533]">
-              {post.author.name}
-            </span>
-          </div>
-
+        <div className="pt-4 border-t border-slate-100 flex items-center justify-end mt-auto">
           <Link
             href={`/blog/${post.slug}`}
             className="inline-flex items-center text-xs sm:text-sm font-bold text-[#0082ca] hover:text-[#00c5d6] transition-colors"

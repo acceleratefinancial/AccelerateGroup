@@ -17,7 +17,7 @@ export default function CalculatorWidget() {
   const [loanAmount, setLoanAmount] = useState<number>(30000);
   const [deposit, setDeposit] = useState<number>(0);
   const [termYears, setTermYears] = useState<number>(5);
-  const [interestRate, setInterestRate] = useState<number>(6.99);
+  const [interestRate, setInterestRate] = useState<number>(7.49);
   const [frequency, setFrequency] = useState<"weekly" | "fortnightly" | "monthly">("weekly");
 
   // View State: 'calculator' | 'quote' | 'success'

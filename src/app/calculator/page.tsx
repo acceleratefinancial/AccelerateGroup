@@ -22,7 +22,7 @@ export default function CalculatorPage() {
         <PageHero
           title="Financial Calculators"
           eyebrow="Interactive Tools"
-          description="Model your borrowing capacity and estimated repayments across residential mortgages, vehicle finance, and commercial loans."
+          description="Get estimated repayments for different loan amounts, terms and repayment frequencies."
           breadcrumbs={[
             { label: "Home", href: "/" },
             { label: "Calculator" },
@@ -89,7 +89,7 @@ export default function CalculatorPage() {
                   Protect Your Credit Score
                 </h4>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Avoid multiple credit inquiries. We pre-qualify and package your scenario before formal submission.
+                  Avoid multiple credit enquiries. We pre-qualify and package your scenario before formal submission.
                 </p>
               </div>
 
@@ -101,7 +101,7 @@ export default function CalculatorPage() {
                   End-to-End Management
                 </h4>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Our brokers manage the paperwork, valuation, lender communication, and settlement support start to finish.
+                  Our brokers manage the whole journey from start to finish. Discovery, application, approval, settlement and ongoing support.
                 </p>
               </div>
             </div>

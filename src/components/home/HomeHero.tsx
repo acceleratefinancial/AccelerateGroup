@@ -25,7 +25,7 @@ export default function HomeHero() {
 
             {/* Subheading / Description */}
             <p className="text-slate-300 text-sm sm:text-base lg:text-[17px] leading-relaxed max-w-xl mb-8">
-              Tailored vehicle and business loans with competitive rates and repayments to reach your goals faster.
+              Tailored loans for personal or business use with competitive rates and repayments to reach your goals faster.
             </p>
 
             {/* Standardized Apply Now Button (matches top-right header button style) */}

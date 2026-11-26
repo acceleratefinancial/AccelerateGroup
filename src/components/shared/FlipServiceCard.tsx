@@ -67,7 +67,7 @@ export default function FlipServiceCard({
               <h3 className="text-lg sm:text-xl font-bold text-[#06122d] tracking-tight group-hover:text-[#00c5d6] transition-colors">
                 {service.frontTitle}
               </h3>
-              <p className="text-xs sm:text-[13px] text-slate-500 mt-1 line-clamp-2 leading-relaxed">
+              <p className="text-xs sm:text-[13px] text-slate-500 mt-1 leading-relaxed">
                 {service.frontDesc}
               </p>
             </div>
