@@ -62,7 +62,7 @@ export default function FlipServiceCard({
           </div>
 
           {/* Card Bottom Details */}
-          <div className="p-5 sm:p-6 bg-white border-t border-gray-50 flex items-center justify-between gap-3">
+          <div className="p-5 sm:p-6 bg-white border-t border-gray-50 flex items-center justify-between gap-3 min-h-[110px] sm:min-h-[115px]">
             <div className="flex-1 min-w-0 pr-2">
               <h3 className="text-lg sm:text-xl font-bold text-[#06122d] tracking-tight group-hover:text-[#00c5d6] transition-colors">
                 {service.frontTitle}

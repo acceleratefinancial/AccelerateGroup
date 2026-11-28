@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     "Expert articles and practical insights on commercial asset finance, home loan refinancing, electric vehicle novated leasing, and business equipment loans from our Beverley, South Australia brokerage team.",
 };
 
-// Set to true to hide old 2024 posts until new 2026 articles arrive
-const HIDE_OLD_POSTS = true;
+// Set to false now that new 2026 articles have arrived
+const HIDE_OLD_POSTS = false;
 
 export default function BlogIndexPage() {
   const posts = getAllBlogPosts();

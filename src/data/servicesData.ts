@@ -32,7 +32,7 @@ export const servicesRow1: ServiceCardData[] = [
     title: "Commercial and Business Loans",
     frontTitle: "Business Loans",
     frontDesc:
-      "Commercial loans and equipment finance to fund growth, working capital, and business expansion.",
+      "Commercial loans and equipment finance to fund growth and business expansion.",
     backEyebrow: "FUNDING TO GROW AND SCALE YOUR OPERATIONS",
     features: [
       "Cars, trucks, machinery, plant and equipment finance",
@@ -83,7 +83,7 @@ export const servicesRow2: ServiceCardData[] = [
     title: "Home & Property Loans",
     frontTitle: "Home Loans",
     frontDesc:
-      "Tailored residential mortgages, refinancing and investment property loans.",
+      "Tailored residential mortgages, refinancing and investment loans.",
     backEyebrow: "MORTGAGES MADE SIMPLE AND COMPETITIVE",
     features: [
       "First home buyer guidance and grant assistance",

@@ -162,7 +162,7 @@ export default function HomeFooter() {
               aria-label="View office location on Google Maps"
               className="block group rounded-xl overflow-hidden border border-slate-700/80 bg-slate-800/50 shadow-md max-w-[320px] hover:border-[#00c5d6]/60 transition-all"
             >
-              <div className="relative aspect-[16/10] w-full min-h-[150px]">
+              <div className="relative aspect-[5/4] w-full">
                 <Image
                   src="/images/home/footer-map.png"
                   alt="Accelerate Head Office Map Location"
@@ -231,20 +231,6 @@ export default function HomeFooter() {
               className="hover:text-[#00c5d6] transition-colors"
             >
               Privacy Policy
-            </Link>{" "}
-            |{" "}
-            <Link
-              href="/compliments-concerns"
-              className="hover:text-[#00c5d6] transition-colors"
-            >
-              Compliments &amp; Concerns
-            </Link>{" "}
-            |{" "}
-            <Link
-              href="/forms"
-              className="hover:text-[#00c5d6] transition-colors"
-            >
-              Forms
             </Link>
           </div>
         </div>
